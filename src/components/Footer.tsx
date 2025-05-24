@@ -7,7 +7,7 @@ const navItems = [
     { title: 'Invest', icon: TrendingUp, link: '/investments' },
     { title: 'Goals', icon: Goal, link: '/goals', notification: true },
     { title: 'Discounts', icon: TicketPercent, link: '/discounts' },
-    { title: 'RevPoints', icon: PlusCircle, link: '/points' },
+    { title: 'OTPoints', icon: PlusCircle, link: '/points' },
 ];
 
 export default function Footer() {
