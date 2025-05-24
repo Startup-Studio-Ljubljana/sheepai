@@ -32,7 +32,7 @@ export default function Header() {
 
             <div className="flex-1 mx-4">
                 <div className="relative">
-                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white/70 w-5 h-5" />
+                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white/70 w-5 h-5 z-[51]" />
                     <Input
                         placeholder="Search"
                         className="bg-white/20 border-none text-white placeholder:text-white/70 pl-10 rounded-full backdrop-blur-sm"
