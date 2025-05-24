@@ -1,10 +1,10 @@
 import { Link } from '@tanstack/react-router';
-import { Bitcoin, CreditCard, Home, PlusCircle, TicketPercent, TrendingUp } from 'lucide-react';
+import { Goal, Home, PlusCircle, TicketPercent, TrendingUp } from 'lucide-react';
 
 const navItems = [
     { title: 'Home', icon: Home, link: '/analytics' },
     { title: 'Invest', icon: TrendingUp, link: '/invest' },
-    { title: 'Payments', icon: CreditCard, link: '/payments', notification: true },
+    { title: 'Goals', icon: Goal, link: '/goals', notification: true },
     { title: 'Discounts', icon: TicketPercent, link: '/discounts' },
     { title: 'RevPoints', icon: PlusCircle, link: '/points' },
 ];

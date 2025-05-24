@@ -12,6 +12,7 @@
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as PointsImport } from './routes/points'
+import { Route as GoalsImport } from './routes/goals'
 import { Route as DiscountsImport } from './routes/discounts'
 import { Route as AnalyticsImport } from './routes/analytics'
 import { Route as IndexImport } from './routes/index'
@@ -22,6 +23,12 @@ import { Route as DemoTanstackQueryImport } from './routes/demo.tanstack-query'
 const PointsRoute = PointsImport.update({
   id: '/points',
   path: '/points',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const GoalsRoute = GoalsImport.update({
+  id: '/goals',
+  path: '/goals',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -74,6 +81,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DiscountsImport
       parentRoute: typeof rootRoute
     }
+    '/goals': {
+      id: '/goals'
+      path: '/goals'
+      fullPath: '/goals'
+      preLoaderRoute: typeof GoalsImport
+      parentRoute: typeof rootRoute
+    }
     '/points': {
       id: '/points'
       path: '/points'
@@ -97,6 +111,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/analytics': typeof AnalyticsRoute
   '/discounts': typeof DiscountsRoute
+  '/goals': typeof GoalsRoute
   '/points': typeof PointsRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
 }
@@ -105,6 +120,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/analytics': typeof AnalyticsRoute
   '/discounts': typeof DiscountsRoute
+  '/goals': typeof GoalsRoute
   '/points': typeof PointsRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
 }
@@ -114,6 +130,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/analytics': typeof AnalyticsRoute
   '/discounts': typeof DiscountsRoute
+  '/goals': typeof GoalsRoute
   '/points': typeof PointsRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
 }
@@ -124,15 +141,23 @@ export interface FileRouteTypes {
     | '/'
     | '/analytics'
     | '/discounts'
+    | '/goals'
     | '/points'
     | '/demo/tanstack-query'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/analytics' | '/discounts' | '/points' | '/demo/tanstack-query'
+  to:
+    | '/'
+    | '/analytics'
+    | '/discounts'
+    | '/goals'
+    | '/points'
+    | '/demo/tanstack-query'
   id:
     | '__root__'
     | '/'
     | '/analytics'
     | '/discounts'
+    | '/goals'
     | '/points'
     | '/demo/tanstack-query'
   fileRoutesById: FileRoutesById
@@ -142,6 +167,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AnalyticsRoute: typeof AnalyticsRoute
   DiscountsRoute: typeof DiscountsRoute
+  GoalsRoute: typeof GoalsRoute
   PointsRoute: typeof PointsRoute
   DemoTanstackQueryRoute: typeof DemoTanstackQueryRoute
 }
@@ -150,6 +176,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AnalyticsRoute: AnalyticsRoute,
   DiscountsRoute: DiscountsRoute,
+  GoalsRoute: GoalsRoute,
   PointsRoute: PointsRoute,
   DemoTanstackQueryRoute: DemoTanstackQueryRoute,
 }
@@ -167,6 +194,7 @@ export const routeTree = rootRoute
         "/",
         "/analytics",
         "/discounts",
+        "/goals",
         "/points",
         "/demo/tanstack-query"
       ]
@@ -179,6 +207,9 @@ export const routeTree = rootRoute
     },
     "/discounts": {
       "filePath": "discounts.tsx"
+    },
+    "/goals": {
+      "filePath": "goals.tsx"
     },
     "/points": {
       "filePath": "points.tsx"
