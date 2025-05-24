@@ -80,14 +80,6 @@
     },
     {
       "date": "2024-05-26",
-      "amount": 1553.93,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-05-26",
       "amount": -19.65,
       "currency": "EUR",
       "category": "groceries",
@@ -117,14 +109,6 @@
       "category": "subscriptions",
       "merchant": "Spotify",
       "description": "Subscriptions transaction"
-    },
-    {
-      "date": "2024-05-27",
-      "amount": 1539.49,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-05-27",
@@ -216,19 +200,19 @@
     },
     {
       "date": "2024-05-31",
-      "amount": 1792.5,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-05-31",
       "amount": -152.58,
       "currency": "EUR",
       "category": "transport",
       "merchant": "Ljubljana Bus",
       "description": "Transport transaction"
+    },
+    {
+      "date": "2024-05-01",
+      "amount": 1939.83,
+      "currency": "EUR",
+      "category": "income",
+      "merchant": "CompanyX",
+      "description": "Monthly randomized income"
     },
     {
       "date": "2024-06-01",
@@ -319,14 +303,6 @@
       "description": "Shopping transaction"
     },
     {
-      "date": "2024-06-03",
-      "amount": 1522.56,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2024-06-04",
       "amount": -233.47,
       "currency": "EUR",
@@ -349,14 +325,6 @@
       "category": "transport",
       "merchant": "Ljubljana Bus",
       "description": "Transport transaction"
-    },
-    {
-      "date": "2024-06-04",
-      "amount": 1592.41,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-06-05",
@@ -429,14 +397,6 @@
       "category": "groceries",
       "merchant": "Spar",
       "description": "Groceries transaction"
-    },
-    {
-      "date": "2024-06-06",
-      "amount": 1671.89,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-06-07",
@@ -640,27 +600,11 @@
     },
     {
       "date": "2024-06-18",
-      "amount": 1606.68,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-06-18",
       "amount": -93.19,
       "currency": "EUR",
       "category": "shopping",
       "merchant": "H&M",
       "description": "Shopping transaction"
-    },
-    {
-      "date": "2024-06-18",
-      "amount": 1652.43,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-06-19",
@@ -733,14 +677,6 @@
       "category": "entertainment",
       "merchant": "Eventim",
       "description": "Entertainment transaction"
-    },
-    {
-      "date": "2024-06-21",
-      "amount": 1213.54,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-06-21",
@@ -872,14 +808,6 @@
     },
     {
       "date": "2024-06-27",
-      "amount": 1834.11,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-06-27",
       "amount": -158.57,
       "currency": "EUR",
       "category": "subscriptions",
@@ -901,14 +829,6 @@
       "category": "restaurants",
       "merchant": "Pizzeria Napoli",
       "description": "Restaurants transaction"
-    },
-    {
-      "date": "2024-06-29",
-      "amount": 1445.95,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-06-29",
@@ -949,6 +869,14 @@
       "category": "transport",
       "merchant": "OMV",
       "description": "Transport transaction"
+    },
+    {
+      "date": "2024-06-01",
+      "amount": 1803.97,
+      "currency": "EUR",
+      "category": "income",
+      "merchant": "CompanyX",
+      "description": "Monthly randomized income"
     },
     {
       "date": "2024-07-01",
@@ -1032,43 +960,11 @@
     },
     {
       "date": "2024-07-05",
-      "amount": 1391.55,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-07-05",
-      "amount": 1857.55,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-07-05",
       "amount": -66.26,
       "currency": "EUR",
       "category": "subscriptions",
       "merchant": "Spotify",
       "description": "Subscriptions transaction"
-    },
-    {
-      "date": "2024-07-06",
-      "amount": 1601.13,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-07-06",
-      "amount": 1434.93,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-07-06",
@@ -1096,14 +992,6 @@
     },
     {
       "date": "2024-07-08",
-      "amount": 1597.64,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-07-08",
       "amount": -146.28,
       "currency": "EUR",
       "category": "subscriptions",
@@ -1117,22 +1005,6 @@
       "category": "transport",
       "merchant": "Petrol",
       "description": "Transport transaction"
-    },
-    {
-      "date": "2024-07-08",
-      "amount": 1805.03,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-07-09",
-      "amount": 1521.16,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-07-09",
@@ -1197,14 +1069,6 @@
       "category": "subscriptions",
       "merchant": "Netflix",
       "description": "Subscriptions transaction"
-    },
-    {
-      "date": "2024-07-11",
-      "amount": 1924.38,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-07-11",
@@ -1344,14 +1208,6 @@
     },
     {
       "date": "2024-07-19",
-      "amount": 1816.52,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-07-19",
       "amount": -26.27,
       "currency": "EUR",
       "category": "transport",
@@ -1373,14 +1229,6 @@
       "category": "subscriptions",
       "merchant": "Amazon Prime",
       "description": "Subscriptions transaction"
-    },
-    {
-      "date": "2024-07-20",
-      "amount": 1529.7,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-07-21",
@@ -1461,14 +1309,6 @@
       "category": "entertainment",
       "merchant": "Eventim",
       "description": "Entertainment transaction"
-    },
-    {
-      "date": "2024-07-23",
-      "amount": 1580.12,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-07-23",
@@ -1565,14 +1405,6 @@
       "category": "groceries",
       "merchant": "Spar",
       "description": "Groceries transaction"
-    },
-    {
-      "date": "2024-07-28",
-      "amount": 1481.22,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-07-28",
@@ -1680,14 +1512,6 @@
     },
     {
       "date": "2024-07-31",
-      "amount": 1767.74,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-07-31",
       "amount": -6.69,
       "currency": "EUR",
       "category": "coffee",
@@ -1701,6 +1525,14 @@
       "category": "travel",
       "merchant": "Ryanair",
       "description": "Travel transaction"
+    },
+    {
+      "date": "2024-07-01",
+      "amount": 1466.41,
+      "currency": "EUR",
+      "category": "income",
+      "merchant": "CompanyX",
+      "description": "Monthly randomized income"
     },
     {
       "date": "2024-08-01",
@@ -1752,27 +1584,11 @@
     },
     {
       "date": "2024-08-03",
-      "amount": 1477.72,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-08-03",
       "amount": -179.98,
       "currency": "EUR",
       "category": "groceries",
       "merchant": "Lidl",
       "description": "Groceries transaction"
-    },
-    {
-      "date": "2024-08-03",
-      "amount": 1325.83,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-08-04",
@@ -1879,14 +1695,6 @@
       "description": "Subscriptions transaction"
     },
     {
-      "date": "2024-08-07",
-      "amount": 1470.22,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2024-08-08",
       "amount": -116.85,
       "currency": "EUR",
@@ -1901,22 +1709,6 @@
       "category": "subscriptions",
       "merchant": "Spotify",
       "description": "Subscriptions transaction"
-    },
-    {
-      "date": "2024-08-08",
-      "amount": 1767.77,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-08-08",
-      "amount": 1749.4,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-08-09",
@@ -2119,28 +1911,12 @@
       "description": "Transport transaction"
     },
     {
-      "date": "2024-08-18",
-      "amount": 1681.02,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2024-08-19",
       "amount": -209.62,
       "currency": "EUR",
       "category": "subscriptions",
       "merchant": "Spotify",
       "description": "Subscriptions transaction"
-    },
-    {
-      "date": "2024-08-19",
-      "amount": 1985.4,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-08-19",
@@ -2319,14 +2095,6 @@
       "description": "Subscriptions transaction"
     },
     {
-      "date": "2024-08-26",
-      "amount": 1254.68,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2024-08-27",
       "amount": -209.65,
       "currency": "EUR",
@@ -2439,14 +2207,6 @@
       "description": "Travel transaction"
     },
     {
-      "date": "2024-08-30",
-      "amount": 1267.99,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2024-08-31",
       "amount": -115.73,
       "currency": "EUR",
@@ -2469,6 +2229,14 @@
       "category": "restaurants",
       "merchant": "Pizzeria Napoli",
       "description": "Restaurants transaction"
+    },
+    {
+      "date": "2024-08-01",
+      "amount": 1942.71,
+      "currency": "EUR",
+      "category": "income",
+      "merchant": "CompanyX",
+      "description": "Monthly randomized income"
     },
     {
       "date": "2024-09-01",
@@ -2567,14 +2335,6 @@
       "description": "Shopping transaction"
     },
     {
-      "date": "2024-09-03",
-      "amount": 1548.31,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2024-09-04",
       "amount": -25.68,
       "currency": "EUR",
@@ -2597,14 +2357,6 @@
       "category": "restaurants",
       "merchant": "Sushi Mama",
       "description": "Restaurants transaction"
-    },
-    {
-      "date": "2024-09-04",
-      "amount": 1200.44,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-09-04",
@@ -2864,22 +2616,6 @@
     },
     {
       "date": "2024-09-13",
-      "amount": 1201.73,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-09-13",
-      "amount": 1883.09,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-09-13",
       "amount": -79.8,
       "currency": "EUR",
       "category": "transport",
@@ -3045,14 +2781,6 @@
       "category": "travel",
       "merchant": "Booking.com",
       "description": "Travel transaction"
-    },
-    {
-      "date": "2024-09-19",
-      "amount": 1803.96,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-09-19",
@@ -3272,14 +3000,6 @@
     },
     {
       "date": "2024-09-29",
-      "amount": 1356.24,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-09-29",
       "amount": -84.58,
       "currency": "EUR",
       "category": "entertainment",
@@ -3319,12 +3039,12 @@
       "description": "Groceries transaction"
     },
     {
-      "date": "2024-09-30",
-      "amount": 1555.94,
+      "date": "2024-09-01",
+      "amount": 1605.62,
       "currency": "EUR",
       "category": "income",
       "merchant": "CompanyX",
-      "description": "Income transaction"
+      "description": "Monthly randomized income"
     },
     {
       "date": "2024-10-01",
@@ -3488,14 +3208,6 @@
     },
     {
       "date": "2024-10-07",
-      "amount": 1560.06,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-10-07",
       "amount": -155.1,
       "currency": "EUR",
       "category": "groceries",
@@ -3525,14 +3237,6 @@
       "category": "shopping",
       "merchant": "Zara",
       "description": "Shopping transaction"
-    },
-    {
-      "date": "2024-10-09",
-      "amount": 1876.55,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-10-09",
@@ -3863,28 +3567,12 @@
       "description": "Entertainment transaction"
     },
     {
-      "date": "2024-10-22",
-      "amount": 1212.99,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2024-10-23",
       "amount": -97.74,
       "currency": "EUR",
       "category": "groceries",
       "merchant": "Lidl",
       "description": "Groceries transaction"
-    },
-    {
-      "date": "2024-10-23",
-      "amount": 1914.24,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-10-23",
@@ -3901,14 +3589,6 @@
       "category": "subscriptions",
       "merchant": "Spotify",
       "description": "Subscriptions transaction"
-    },
-    {
-      "date": "2024-10-23",
-      "amount": 1828.03,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-10-24",
@@ -3933,22 +3613,6 @@
       "category": "groceries",
       "merchant": "Mercator",
       "description": "Groceries transaction"
-    },
-    {
-      "date": "2024-10-25",
-      "amount": 1334.36,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-10-25",
-      "amount": 1496.47,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-10-26",
@@ -3997,14 +3661,6 @@
       "category": "groceries",
       "merchant": "Spar",
       "description": "Groceries transaction"
-    },
-    {
-      "date": "2024-10-27",
-      "amount": 1950.79,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-10-28",
@@ -4117,6 +3773,14 @@
       "category": "shopping",
       "merchant": "Big Bang",
       "description": "Shopping transaction"
+    },
+    {
+      "date": "2024-10-01",
+      "amount": 1863.91,
+      "currency": "EUR",
+      "category": "income",
+      "merchant": "CompanyX",
+      "description": "Monthly randomized income"
     },
     {
       "date": "2024-11-01",
@@ -4440,43 +4104,11 @@
     },
     {
       "date": "2024-11-14",
-      "amount": 1574.69,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-11-14",
-      "amount": 1873.2,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-11-14",
-      "amount": 1316.65,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-11-14",
       "amount": -106.51,
       "currency": "EUR",
       "category": "groceries",
       "merchant": "Lidl",
       "description": "Groceries transaction"
-    },
-    {
-      "date": "2024-11-15",
-      "amount": 1498.9,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-11-16",
@@ -4501,14 +4133,6 @@
       "category": "restaurants",
       "merchant": "Burger King",
       "description": "Restaurants transaction"
-    },
-    {
-      "date": "2024-11-16",
-      "amount": 1841.5,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-11-17",
@@ -4640,14 +4264,6 @@
     },
     {
       "date": "2024-11-22",
-      "amount": 1827.72,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-11-22",
       "amount": -225.37,
       "currency": "EUR",
       "category": "travel",
@@ -4672,14 +4288,6 @@
     },
     {
       "date": "2024-11-23",
-      "amount": 1649.34,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-11-23",
       "amount": -236.38,
       "currency": "EUR",
       "category": "subscriptions",
@@ -4693,14 +4301,6 @@
       "category": "transport",
       "merchant": "Petrol",
       "description": "Transport transaction"
-    },
-    {
-      "date": "2024-11-25",
-      "amount": 1481.52,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-11-26",
@@ -4749,14 +4349,6 @@
       "category": "coffee",
       "merchant": "Zvezda Cafe",
       "description": "Coffee transaction"
-    },
-    {
-      "date": "2024-11-27",
-      "amount": 1526.02,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-11-27",
@@ -4855,6 +4447,14 @@
       "description": "Restaurants transaction"
     },
     {
+      "date": "2024-11-01",
+      "amount": 1938.54,
+      "currency": "EUR",
+      "category": "income",
+      "merchant": "CompanyX",
+      "description": "Monthly randomized income"
+    },
+    {
       "date": "2024-12-01",
       "amount": -221.78,
       "currency": "EUR",
@@ -4903,14 +4503,6 @@
       "description": "Coffee transaction"
     },
     {
-      "date": "2024-12-02",
-      "amount": 1542.93,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2024-12-03",
       "amount": -20.11,
       "currency": "EUR",
@@ -4925,14 +4517,6 @@
       "category": "subscriptions",
       "merchant": "Spotify",
       "description": "Subscriptions transaction"
-    },
-    {
-      "date": "2024-12-03",
-      "amount": 1622.78,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-12-03",
@@ -4965,22 +4549,6 @@
       "category": "transport",
       "merchant": "OMV",
       "description": "Transport transaction"
-    },
-    {
-      "date": "2024-12-05",
-      "amount": 1245.15,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-12-05",
-      "amount": 1970.84,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-12-05",
@@ -5120,14 +4688,6 @@
     },
     {
       "date": "2024-12-10",
-      "amount": 1603.62,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-12-10",
       "amount": -27.2,
       "currency": "EUR",
       "category": "coffee",
@@ -5159,22 +4719,6 @@
       "description": "Subscriptions transaction"
     },
     {
-      "date": "2024-12-12",
-      "amount": 1328.7,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2024-12-12",
-      "amount": 1978.15,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2024-12-13",
       "amount": -23.81,
       "currency": "EUR",
@@ -5197,14 +4741,6 @@
       "category": "travel",
       "merchant": "Airbnb",
       "description": "Travel transaction"
-    },
-    {
-      "date": "2024-12-13",
-      "amount": 1475.71,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-12-13",
@@ -5245,14 +4781,6 @@
       "category": "entertainment",
       "merchant": "Eventim",
       "description": "Entertainment transaction"
-    },
-    {
-      "date": "2024-12-16",
-      "amount": 1653.89,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-12-16",
@@ -5373,14 +4901,6 @@
       "category": "coffee",
       "merchant": "Zvezda Cafe",
       "description": "Coffee transaction"
-    },
-    {
-      "date": "2024-12-21",
-      "amount": 1812.72,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2024-12-22",
@@ -5543,6 +5063,14 @@
       "description": "Travel transaction"
     },
     {
+      "date": "2024-12-01",
+      "amount": 1492.69,
+      "currency": "EUR",
+      "category": "income",
+      "merchant": "CompanyX",
+      "description": "Monthly randomized income"
+    },
+    {
       "date": "2025-01-01",
       "amount": -106.2,
       "currency": "EUR",
@@ -5584,14 +5112,6 @@
     },
     {
       "date": "2025-01-02",
-      "amount": 1557.54,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-01-02",
       "amount": -213.5,
       "currency": "EUR",
       "category": "restaurants",
@@ -5605,14 +5125,6 @@
       "category": "travel",
       "merchant": "Ryanair",
       "description": "Travel transaction"
-    },
-    {
-      "date": "2025-01-03",
-      "amount": 1936.2,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-01-04",
@@ -5637,22 +5149,6 @@
       "category": "shopping",
       "merchant": "Zara",
       "description": "Shopping transaction"
-    },
-    {
-      "date": "2025-01-05",
-      "amount": 1473.07,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-01-06",
-      "amount": 1440.61,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-01-06",
@@ -5855,14 +5351,6 @@
       "description": "Transport transaction"
     },
     {
-      "date": "2025-01-14",
-      "amount": 1475.91,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2025-01-15",
       "amount": -164.45,
       "currency": "EUR",
@@ -5999,14 +5487,6 @@
       "description": "Groceries transaction"
     },
     {
-      "date": "2025-01-19",
-      "amount": 1294.72,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2025-01-20",
       "amount": -28.79,
       "currency": "EUR",
@@ -6069,14 +5549,6 @@
       "category": "restaurants",
       "merchant": "Burger King",
       "description": "Restaurants transaction"
-    },
-    {
-      "date": "2025-01-21",
-      "amount": 1726.81,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-01-22",
@@ -6168,35 +5640,11 @@
     },
     {
       "date": "2025-01-25",
-      "amount": 1406.13,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-01-25",
       "amount": -35.06,
       "currency": "EUR",
       "category": "subscriptions",
       "merchant": "Netflix",
       "description": "Subscriptions transaction"
-    },
-    {
-      "date": "2025-01-25",
-      "amount": 1798.9,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-01-26",
-      "amount": 1589.9,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-01-26",
@@ -6303,6 +5751,14 @@
       "description": "Travel transaction"
     },
     {
+      "date": "2025-01-01",
+      "amount": 1328.88,
+      "currency": "EUR",
+      "category": "income",
+      "merchant": "CompanyX",
+      "description": "Monthly randomized income"
+    },
+    {
       "date": "2025-02-01",
       "amount": -160.03,
       "currency": "EUR",
@@ -6341,14 +5797,6 @@
       "category": "entertainment",
       "merchant": "Cineplexx",
       "description": "Entertainment transaction"
-    },
-    {
-      "date": "2025-02-02",
-      "amount": 1822.59,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-02-02",
@@ -6429,14 +5877,6 @@
       "category": "groceries",
       "merchant": "Spar",
       "description": "Groceries transaction"
-    },
-    {
-      "date": "2025-02-05",
-      "amount": 1469.71,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-02-05",
@@ -6549,14 +5989,6 @@
       "category": "travel",
       "merchant": "Ryanair",
       "description": "Travel transaction"
-    },
-    {
-      "date": "2025-02-10",
-      "amount": 1780.63,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-02-10",
@@ -6695,22 +6127,6 @@
       "description": "Travel transaction"
     },
     {
-      "date": "2025-02-16",
-      "amount": 1234.12,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-02-16",
-      "amount": 1631.9,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2025-02-17",
       "amount": -5.54,
       "currency": "EUR",
@@ -6791,14 +6207,6 @@
       "description": "Coffee transaction"
     },
     {
-      "date": "2025-02-19",
-      "amount": 1428.69,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2025-02-20",
       "amount": -212.19,
       "currency": "EUR",
@@ -6816,14 +6224,6 @@
     },
     {
       "date": "2025-02-20",
-      "amount": 1993.22,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-02-20",
       "amount": -141.85,
       "currency": "EUR",
       "category": "subscriptions",
@@ -6837,14 +6237,6 @@
       "category": "restaurants",
       "merchant": "Sushi Mama",
       "description": "Restaurants transaction"
-    },
-    {
-      "date": "2025-02-21",
-      "amount": 1735.33,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-02-21",
@@ -6912,14 +6304,6 @@
     },
     {
       "date": "2025-02-25",
-      "amount": 1745.88,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-02-25",
       "amount": -119.78,
       "currency": "EUR",
       "category": "entertainment",
@@ -6943,14 +6327,6 @@
       "description": "Groceries transaction"
     },
     {
-      "date": "2025-02-25",
-      "amount": 1536.58,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2025-02-26",
       "amount": -233.55,
       "currency": "EUR",
@@ -6959,20 +6335,20 @@
       "description": "Groceries transaction"
     },
     {
-      "date": "2025-02-27",
-      "amount": 1678.11,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2025-02-28",
       "amount": -193.94,
       "currency": "EUR",
       "category": "entertainment",
       "merchant": "Cineplexx",
       "description": "Entertainment transaction"
+    },
+    {
+      "date": "2025-02-01",
+      "amount": 1640.76,
+      "currency": "EUR",
+      "category": "income",
+      "merchant": "CompanyX",
+      "description": "Monthly randomized income"
     },
     {
       "date": "2025-03-01",
@@ -7000,14 +6376,6 @@
     },
     {
       "date": "2025-03-02",
-      "amount": 1721.09,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-03-02",
       "amount": -203.36,
       "currency": "EUR",
       "category": "subscriptions",
@@ -7029,14 +6397,6 @@
       "category": "groceries",
       "merchant": "Spar",
       "description": "Groceries transaction"
-    },
-    {
-      "date": "2025-03-03",
-      "amount": 1946.29,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-03-03",
@@ -7077,14 +6437,6 @@
       "category": "restaurants",
       "merchant": "Sushi Mama",
       "description": "Restaurants transaction"
-    },
-    {
-      "date": "2025-03-05",
-      "amount": 1500.22,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-03-05",
@@ -7149,14 +6501,6 @@
       "category": "coffee",
       "merchant": "Starbucks",
       "description": "Coffee transaction"
-    },
-    {
-      "date": "2025-03-07",
-      "amount": 1267.36,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-03-08",
@@ -7263,14 +6607,6 @@
       "description": "Transport transaction"
     },
     {
-      "date": "2025-03-11",
-      "amount": 1816.89,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2025-03-12",
       "amount": -156.0,
       "currency": "EUR",
@@ -7309,14 +6645,6 @@
       "category": "transport",
       "merchant": "Ljubljana Bus",
       "description": "Transport transaction"
-    },
-    {
-      "date": "2025-03-13",
-      "amount": 1216.91,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-03-14",
@@ -7376,14 +6704,6 @@
     },
     {
       "date": "2025-03-15",
-      "amount": 1850.59,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-03-15",
       "amount": -102.54,
       "currency": "EUR",
       "category": "coffee",
@@ -7397,22 +6717,6 @@
       "category": "entertainment",
       "merchant": "Escape Room",
       "description": "Entertainment transaction"
-    },
-    {
-      "date": "2025-03-16",
-      "amount": 1593.43,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-03-17",
-      "amount": 1514.98,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-03-17",
@@ -7695,22 +6999,6 @@
       "description": "Entertainment transaction"
     },
     {
-      "date": "2025-03-29",
-      "amount": 1278.14,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-03-30",
-      "amount": 1205.2,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2025-03-31",
       "amount": -165.05,
       "currency": "EUR",
@@ -7725,6 +7013,14 @@
       "category": "groceries",
       "merchant": "Lidl",
       "description": "Groceries transaction"
+    },
+    {
+      "date": "2025-03-01",
+      "amount": 1631.54,
+      "currency": "EUR",
+      "category": "income",
+      "merchant": "CompanyX",
+      "description": "Monthly randomized income"
     },
     {
       "date": "2025-04-01",
@@ -7824,14 +7120,6 @@
     },
     {
       "date": "2025-04-04",
-      "amount": 1572.14,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-04-04",
       "amount": -150.25,
       "currency": "EUR",
       "category": "subscriptions",
@@ -7903,14 +7191,6 @@
       "description": "Shopping transaction"
     },
     {
-      "date": "2025-04-08",
-      "amount": 1519.57,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2025-04-09",
       "amount": -26.74,
       "currency": "EUR",
@@ -7941,22 +7221,6 @@
       "category": "groceries",
       "merchant": "Mercator",
       "description": "Groceries transaction"
-    },
-    {
-      "date": "2025-04-09",
-      "amount": 1235.66,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-04-10",
-      "amount": 1240.51,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-04-10",
@@ -8023,14 +7287,6 @@
       "description": "Restaurants transaction"
     },
     {
-      "date": "2025-04-12",
-      "amount": 1309.4,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2025-04-13",
       "amount": -40.25,
       "currency": "EUR",
@@ -8056,27 +7312,11 @@
     },
     {
       "date": "2025-04-14",
-      "amount": 1940.91,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-04-14",
       "amount": -212.12,
       "currency": "EUR",
       "category": "coffee",
       "merchant": "Zvezda Cafe",
       "description": "Coffee transaction"
-    },
-    {
-      "date": "2025-04-15",
-      "amount": 1719.44,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-04-15",
@@ -8101,14 +7341,6 @@
       "category": "shopping",
       "merchant": "H&M",
       "description": "Shopping transaction"
-    },
-    {
-      "date": "2025-04-16",
-      "amount": 1705.57,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-04-16",
@@ -8152,14 +7384,6 @@
     },
     {
       "date": "2025-04-18",
-      "amount": 1975.67,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-04-18",
       "amount": -41.02,
       "currency": "EUR",
       "category": "travel",
@@ -8173,14 +7397,6 @@
       "category": "coffee",
       "merchant": "Cafe \u010cokl",
       "description": "Coffee transaction"
-    },
-    {
-      "date": "2025-04-19",
-      "amount": 1935.89,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-04-20",
@@ -8245,14 +7461,6 @@
       "category": "shopping",
       "merchant": "Zara",
       "description": "Shopping transaction"
-    },
-    {
-      "date": "2025-04-22",
-      "amount": 1533.03,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-04-23",
@@ -8424,14 +7632,6 @@
     },
     {
       "date": "2025-04-29",
-      "amount": 1308.14,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-04-29",
       "amount": -93.69,
       "currency": "EUR",
       "category": "restaurants",
@@ -8453,6 +7653,14 @@
       "category": "travel",
       "merchant": "Airbnb",
       "description": "Travel transaction"
+    },
+    {
+      "date": "2025-04-01",
+      "amount": 1729.12,
+      "currency": "EUR",
+      "category": "income",
+      "merchant": "CompanyX",
+      "description": "Monthly randomized income"
     },
     {
       "date": "2025-05-01",
@@ -8485,14 +7693,6 @@
       "category": "transport",
       "merchant": "Ljubljana Bus",
       "description": "Transport transaction"
-    },
-    {
-      "date": "2025-05-01",
-      "amount": 1461.68,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-05-02",
@@ -8648,22 +7848,6 @@
     },
     {
       "date": "2025-05-10",
-      "amount": 1242.33,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-05-10",
-      "amount": 1522.57,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-05-10",
       "amount": -37.67,
       "currency": "EUR",
       "category": "travel",
@@ -8688,14 +7872,6 @@
     },
     {
       "date": "2025-05-11",
-      "amount": 1450.13,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-05-11",
       "amount": -89.83,
       "currency": "EUR",
       "category": "transport",
@@ -8709,14 +7885,6 @@
       "category": "coffee",
       "merchant": "Starbucks",
       "description": "Coffee transaction"
-    },
-    {
-      "date": "2025-05-11",
-      "amount": 1805.13,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-05-12",
@@ -8741,14 +7909,6 @@
       "category": "entertainment",
       "merchant": "Eventim",
       "description": "Entertainment transaction"
-    },
-    {
-      "date": "2025-05-14",
-      "amount": 1533.88,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
     },
     {
       "date": "2025-05-14",
@@ -8951,22 +8111,6 @@
       "description": "Shopping transaction"
     },
     {
-      "date": "2025-05-20",
-      "amount": 1235.06,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-05-21",
-      "amount": 1469.08,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
       "date": "2025-05-21",
       "amount": -120.11,
       "currency": "EUR",
@@ -9048,19 +8192,19 @@
     },
     {
       "date": "2025-05-24",
-      "amount": 1449.01,
-      "currency": "EUR",
-      "category": "income",
-      "merchant": "CompanyX",
-      "description": "Income transaction"
-    },
-    {
-      "date": "2025-05-24",
       "amount": -58.23,
       "currency": "EUR",
       "category": "coffee",
       "merchant": "Starbucks",
       "description": "Coffee transaction"
+    },
+    {
+      "date": "2025-05-01",
+      "amount": 1484.2,
+      "currency": "EUR",
+      "category": "income",
+      "merchant": "CompanyX",
+      "description": "Monthly randomized income"
     }
   ]
 }
