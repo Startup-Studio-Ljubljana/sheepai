@@ -6,8 +6,7 @@ import {
     CardTitle,
     CardContent,
 } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent } from "@/components/ui/tabs";
 import { ChevronRight, TrendingUp, TrendingDown } from "lucide-react";
 import SpendingChart from '../analytics/SpendingChart';
 import { isAfter, subDays } from 'date-fns';

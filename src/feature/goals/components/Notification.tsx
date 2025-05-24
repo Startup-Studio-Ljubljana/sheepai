@@ -5,7 +5,7 @@ interface Props {
     description: string;
 }
 
-export function Notification({title, description}: Props) {
+function Notification({title, description}: Props) {
     return (
         <div className="bg-white/10 backdrop-blur-md rounded-2xl p-3 border border-white/20 w-full relative">
             <button type="button"
@@ -22,3 +22,4 @@ export function Notification({title, description}: Props) {
         </div>
     )
 }
+
