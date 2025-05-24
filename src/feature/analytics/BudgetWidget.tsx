@@ -49,8 +49,6 @@ const BudgetWidget = () => {
 			setInsight(parsed);
 		} catch (err) {
 			setInsight({ summary: "Error analyzing spendings.", chartData: [] });
-		} finally {
-			setLoading(false);
 		}
 	}
 
