@@ -144,7 +144,7 @@ function RouteComponent() {
 
 	return (
 		<div className="min-h-screen text-white">
-			<div className="relative z-10 max-w-sm mx-auto min-h-screen backdrop-blur-sm">
+			<div className="relative z-10 max-w-sm mx-auto min-h-screen backdrop-blur-sm px-2">
 					<h1 className="text-2xl font-semibold text-center mb-3 mt-2">Discounts</h1>
 
 				<div className="flex justify-center space-x-2 p-4">
