@@ -1,4 +1,5 @@
 import { Progress } from "@/components/ui/progress";
+import { Share, UserRoundPlus } from "lucide-react";
 
 interface GoalCardProps {
 	title: string;
@@ -23,12 +24,30 @@ const GoalCard = ({
 			<div className="flex items-center space-x-4 mb-2">
 				<div className="text-4xl">{icon}</div>
 				<div className="flex-1">
-					<h3 className="text-lg font-semibold text-white">{title}</h3>
-					<p className="text-white/70 text-sm">saving €{monthlyContribution}/month</p>
+					<div className="flex items-center justify-between">
+						<h3 className="text-lg font-semibold text-white">{title}</h3>
+						<div className="flex gap-2">
+						<button
+								type="button"
+								className="size-8 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
+							>
+								<UserRoundPlus className="size-4 text-white" />
+							</button>
+							<button
+								type="button"
+								className="size-8 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
+							>
+								<Share className="size-4 text-white" />
+							</button>
+						</div>
+					</div>
+					<p className="text-white/70 text-sm">
+						saving €{monthlyContribution}/month
+					</p>
 				</div>
 			</div>
 
-			<div className="space-y-1">
+			<div className="space-y-1 mt-6">
 				<div className="flex justify-between items-center">
 					<p className="text-white/70 text-xs">
 						{Math.round(progressPercentage)}% complete
@@ -40,7 +59,17 @@ const GoalCard = ({
 					)}
 				</div>
 
-				<Progress value={progressPercentage} className="h-3 bg-white/20" />
+				<Progress value={progressPercentage} className="h-3 bg-white/20 my-2" />
+				<div className="flex justify-between items-center">
+					<p className="text-white/70 text-xs">
+						{currentAmount}€
+					</p>
+					
+						<p className="text-white/70 text-xs font-medium">
+							{targetAmount}€
+						</p>
+					
+				</div>
 			</div>
 		</div>
 	);

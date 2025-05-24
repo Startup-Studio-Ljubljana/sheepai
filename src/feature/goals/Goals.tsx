@@ -82,7 +82,7 @@ const Goals = () => {
 				))}
 			</div>
 
-			<div className="pb-24 space-y-4">
+			<div className="pb-24 space-y-4 mt-2">
 				{goals.map((goal) => (
 					<GoalCard key={goal.id} {...goal} />
 				))}
