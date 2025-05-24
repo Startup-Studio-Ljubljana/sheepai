@@ -1,4 +1,4 @@
-import { Check } from 'lucide-react';
+import { Check, Circle } from 'lucide-react';
 import { Card } from "@/components/ui/card.tsx";
 
 interface Suggestion {
@@ -35,7 +35,7 @@ const SuggestionCard = ({suggestion, onToggle}: SuggestionCardProps) => {
                     }`}
                 >
                     {suggestion.selected && <Check className="w-4 h-4 text-gray-900"/>}
-                    {!suggestion.selected && <Check className="w-4 h-4 text-gray-900 bg-gray-200"/>}
+                    {!suggestion.selected && <Circle className="w-4 h-4 text-gray-900"/>}
                 </div>
 
                 <div className="flex-1">
@@ -46,7 +46,7 @@ const SuggestionCard = ({suggestion, onToggle}: SuggestionCardProps) => {
 						<span className="bg-white/10 text-gray-900/60 px-2 py-0.5 rounded-full">
 							{suggestion.category}
 						</span>
-                        <span className="text-green-300 font-semibold">
+                        <span className="text-green-700 font-semibold">
 							+€{suggestion.monthlySavings}/month
 						</span>
                     </div>
