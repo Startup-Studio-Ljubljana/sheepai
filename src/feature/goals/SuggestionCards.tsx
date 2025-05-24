@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import { Card } from "@/components/ui/card.tsx";
 
 interface Suggestion {
     id: string;
@@ -14,11 +15,12 @@ interface SuggestionCardProps {
     onToggle: () => void;
 }
 
-const SuggestionCard = ({ suggestion, onToggle }: SuggestionCardProps) => {
+const SuggestionCard = ({suggestion, onToggle}: SuggestionCardProps) => {
     return (
-        <div
+        <Card
             onClick={onToggle}
-            className={`w-full rounded-3xl p-4 border backdrop-blur-md transition-all duration-200 cursor-pointer ${
+            key={suggestion.id}
+            className={`transition-all duration-200 pt-3 pb-4 px-5 rounded-xl ${
                 suggestion.selected
                     ? 'border-green-400 bg-green-500/10'
                     : 'border-white/20 bg-white/10 hover:bg-white/15'
@@ -32,15 +34,16 @@ const SuggestionCard = ({ suggestion, onToggle }: SuggestionCardProps) => {
                             : 'border-white/40'
                     }`}
                 >
-                    {suggestion.selected && <Check className="w-4 h-4 text-white" />}
+                    {suggestion.selected && <Check className="w-4 h-4 text-gray-900"/>}
+                    {!suggestion.selected && <Check className="w-4 h-4 text-gray-900 bg-gray-200"/>}
                 </div>
 
                 <div className="flex-1">
-                    <h3 className="text-white text-sm font-semibold mb-0.5">{suggestion.title}</h3>
-                    <p className="text-xs text-white/70 mb-2">{suggestion.description}</p>
+                    <h3 className="text-gray-900 text-sm font-semibold mb-0.5">{suggestion.title}</h3>
+                    <p className="text-xs text-gray-900/70 mb-2">{suggestion.description}</p>
 
                     <div className="flex justify-between items-center text-xs">
-						<span className="bg-white/10 text-white/60 px-2 py-0.5 rounded-full">
+						<span className="bg-white/10 text-gray-900/60 px-2 py-0.5 rounded-full">
 							{suggestion.category}
 						</span>
                         <span className="text-green-300 font-semibold">
@@ -49,7 +52,7 @@ const SuggestionCard = ({ suggestion, onToggle }: SuggestionCardProps) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Card>
     );
 };
 
