@@ -1,4 +1,3 @@
-import { Link } from '@tanstack/react-router'
 import { Cog, Search } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Button } from './ui/button'
@@ -41,7 +40,6 @@ export default function Header() {
                 </div>
             </div>
 
-            <Link to="/" className="">
                 <Button
                     variant="ghost"
                     size="icon"
@@ -49,7 +47,6 @@ export default function Header() {
                 >
                     <Cog className="size-6" />
                 </Button>
-            </Link>
         </div>
     )
 }
