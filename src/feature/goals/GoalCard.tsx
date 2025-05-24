@@ -1,5 +1,5 @@
 import { Progress } from "@/components/ui/progress";
-import { Share, UserRoundPlus } from "lucide-react";
+import { Share, Sparkles } from "lucide-react";
 
 interface GoalCardProps {
 	title: string;
@@ -7,15 +7,17 @@ interface GoalCardProps {
 	currentAmount: number;
 	monthlyContribution: number;
 	icon: string;
+	onUpsellClick?: () => void;
 }
 
 const GoalCard = ({
-	title,
-	targetAmount,
-	currentAmount,
-	monthlyContribution,
-	icon,
-}: GoalCardProps) => {
+					  title,
+					  targetAmount,
+					  currentAmount,
+					  monthlyContribution,
+					  icon,
+					  onUpsellClick,
+				  }: GoalCardProps) => {
 	const progressPercentage = (currentAmount / targetAmount) * 100;
 	const isCloseToTarget = progressPercentage >= 95;
 
@@ -27,11 +29,12 @@ const GoalCard = ({
 					<div className="flex items-center justify-between">
 						<h3 className="text-lg font-semibold text-white">{title}</h3>
 						<div className="flex gap-2">
-						<button
+							<button
 								type="button"
+								onClick={onUpsellClick}
 								className="size-8 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
 							>
-								<UserRoundPlus className="size-4 text-white" />
+								<Sparkles className="size-4 text-white" />
 							</button>
 							<button
 								type="button"
@@ -42,7 +45,7 @@ const GoalCard = ({
 						</div>
 					</div>
 					<p className="text-white/70 text-sm">
-						saving €{monthlyContribution}/month
+						saving €{monthlyContribution.toFixed(2)}/month
 					</p>
 				</div>
 			</div>
@@ -61,14 +64,8 @@ const GoalCard = ({
 
 				<Progress value={progressPercentage} className="h-3 bg-white/20 my-2" />
 				<div className="flex justify-between items-center">
-					<p className="text-white/70 text-xs">
-						{currentAmount}€
-					</p>
-
-						<p className="text-white/70 text-xs font-medium">
-							{targetAmount}€
-						</p>
-
+					<p className="text-white/70 text-xs">{currentAmount}€</p>
+					<p className="text-white/70 text-xs font-medium">{targetAmount}€</p>
 				</div>
 			</div>
 		</div>
