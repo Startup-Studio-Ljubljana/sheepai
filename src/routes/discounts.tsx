@@ -144,10 +144,11 @@ function RouteComponent() {
 
 	return (
 		<div className="min-h-screen text-white">
-			<div className="relative z-10 max-w-sm mx-auto min-h-screen backdrop-blur-sm px-4">
-				<h1 className="text-2xl font-semibold text-center mb-3 mt-2 text-gray-900">Discounts</h1>
-
-				<div className="flex justify-center space-x-2 p-4 px-0">
+			<div className="relative z-10 max-w-sm mx-auto min-h-screen backdrop-blur-sm px-2">
+            <h1 className="text-xl font-semibold w-full pt-2 pb-1 mx-2 text-gray-900">
+				Discounts
+			</h1>
+				<div className="flex space-x-2 p-4 px-0">
 					{sections.map((section) => (
 						<button
 							key={section.id}
