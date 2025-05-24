@@ -56,7 +56,7 @@ function RouteComponent() {
 				location: "City Center",
 				expiresAt: "Jan 15",
 				backgroundColor: "bg-gradient-to-br from-green-500 to-emerald-600",
-				logoUrl: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=100&h=100&fit=crop",
+				logoUrl: "https://cdn-icons-png.flaticon.com/512/8521/8521317.png",
 			},
 			{
 				id: "3",
@@ -67,7 +67,7 @@ function RouteComponent() {
 				location: "Uptown",
 				expiresAt: "Dec 25",
 				backgroundColor: "bg-gradient-to-br from-red-500 to-pink-600",
-				logoUrl: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=100&h=100&fit=crop",
+				logoUrl: "https://cdn-icons-png.flaticon.com/512/7571/7571971.png",
 			},
 		],
 		popularDiscounts: [
