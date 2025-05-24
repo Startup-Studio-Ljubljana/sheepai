@@ -22,7 +22,7 @@ export default function Header() {
                 </div>
             </div>
 
-            <Link to="/settings" className="">
+            <Link to="/" className="">
                 <Button
                     variant="ghost"
                     size="icon"
