@@ -3,8 +3,7 @@ import BudgetWidget from "@/feature/analytics/BudgetWidget.tsx";
 import { useMemo } from "react";
 import data from "../../../bank_account_data.json";
 import { parseISO, subDays, isAfter } from "date-fns";
-import SuggestionCard from "../goals/SuggestionCards";
-import { ArrowLeft, ChevronRight, ChevronsDown, ChevronsRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const Base = () => {
@@ -60,7 +59,7 @@ const Base = () => {
 				Analytics
 			</h1>
 			<div className="mt-2 flex flex-col gap-4">
-				<SpendingChart data={last30DaysData} />
+				<SpendingChart data={last30DaysData} total={1925.72} />
 				<BudgetWidget />
 			</div>
 

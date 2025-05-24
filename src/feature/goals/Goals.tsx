@@ -241,11 +241,11 @@ const Goals = () => {
                         onClick={() =>
                             setActiveSection(section.id as "My goals" | "Recommendations")
                         }
-                        className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-colors
-                                ${
+                        className={` flex items-center space-x-1.5 px-3 py-1.5 border border-gray-150
+                                rounded-full text-sm font-medium transition-colors shadow-xs ${
                             activeSection === section.id
-                                ? "bg-white/20 text-white backdrop-blur-sm"
-                                : "bg-white/10 text-white/70 hover:bg-white/15"
+                                ? "bg-gray-200 border-gray-300 text-gray-900 backdrop-blur-sm"
+                                : "bg-white text-gray-700 hover:bg-white/15"
                         }`}
                     >
                         <section.icon className="w-4 h-4"/>
@@ -256,7 +256,7 @@ const Goals = () => {
 
             {activeSection === "My goals" && (
                 <React.Fragment>
-                    <h1 className="text-xl font-semibold w-full text-white mb-4 mx-2">My Goals</h1>
+                    <h1 className="text-xl font-semibold w-full text-gray-900 mb-4 mx-2">My Goals</h1>
 
                     <div className="pb-24 space-y-4">
                         {goals.map(goal => (
@@ -305,12 +305,12 @@ const Goals = () => {
                                                         {!service.added ? (
                                                             <button
                                                                 onClick={(e) => handleAddUpsell(service, e)}
-                                                                className="w-6 h-6 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center"
+                                                                className="w-6 h-6 bg-green-600 hover:bg-green-700 text-gray-900 rounded-full flex items-center justify-center"
                                                             >
                                                                 <Plus className="w-4 h-4" />
                                                             </button>
                                                         ) : (
-                                                            <div className="w-6 h-6 bg-gray-300 text-white rounded-full flex items-center justify-center cursor-not-allowed">
+                                                            <div className="w-6 h-6 bg-gray-300 text-gray-900 rounded-full flex items-center justify-center cursor-not-allowed">
                                                                 <Plus className="w-4 h-4 opacity-40" />
                                                             </div>
                                                         )}
@@ -331,7 +331,7 @@ const Goals = () => {
                 <React.Fragment>
                     <div className="pb-6 mb-[160px]">
                         <div className="mb-6">
-                            <h1 className="text-xl font-semibold w-full text-white mb-6 mt-1 mx-2">Recommended
+                            <h1 className="text-xl font-semibold w-full text-gray-900 mb-6 mt-1 mx-2">Recommended
                                 actions</h1>
 
                             <div className="space-y-3">
@@ -386,7 +386,7 @@ const Goals = () => {
                                             className={`w-full font-semibold py-2 px-3 rounded-xl transition-colors text-sm
                         ${selectedSuggestions.length === 0
                                                 ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                                                : "bg-green-600 hover:bg-green-700 text-white"
+                                                : "bg-green-600 hover:bg-green-700 text-gray-900"
                                             }`}
                                         >
                                             Apply Selected Actions
