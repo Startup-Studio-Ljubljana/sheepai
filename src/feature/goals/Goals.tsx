@@ -67,7 +67,7 @@ const Goals = () => {
 						key={section.id}
 						type="button"
 						onClick={() =>
-							setActiveSection(section.id as "nearYou" | "popular" | "forYou")
+							setActiveSection(section.id as "My goals" | "Recommendations" | "Shared")
 						}
 						className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-colors
 								${
