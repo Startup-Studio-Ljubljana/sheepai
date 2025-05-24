@@ -55,8 +55,11 @@ const InvestmentPage = () => {
     }, []);
 
     return (
-        <div className="min-h-screen text-white p-4 space-y-6">
+        <div className="min-h-screen text-white p-4 pt-2 space-y-6 pb-12">
 
+<h1 className="text-xl font-semibold w-full mb-6 mx-2 text-gray-900">
+				Investments
+			</h1>
 <SpendingChart data={last30DaysData} title="Balance"/>
 
             <Card className={cardStyle}>
@@ -64,7 +67,7 @@ const InvestmentPage = () => {
                     <CardTitle className="font-medium text-gray-700">Our Recommended Funds</CardTitle>
                     <ChevronRight className="w-5 h-5 text-gray-700" />
                 </CardHeader>
-                <CardContent className='px-4'>
+                <CardContent className='px-0'>
                     <div className="grid grid-cols-4 gap-x-2">
                         {[
                             {
@@ -119,7 +122,7 @@ const InvestmentPage = () => {
                     <CardTitle className="font-medium text-gray-700">Today's top movers</CardTitle>
                     <ChevronRight className="w-5 h-5 text-gray-700" />
                 </CardHeader>
-                <CardContent className='px-4'>
+                <CardContent className='px-0'>
                     <Tabs defaultValue="gainers" className="w-full">
                         <TabsContent value="gainers">
                             <div className="grid grid-cols-4 gap-x-2">
@@ -150,7 +153,7 @@ const InvestmentPage = () => {
                     <CardTitle className="font-medium text-gray-700">Most traded this week</CardTitle>
                     <ChevronRight className="w-5 h-5 text-gray-700" />
                 </CardHeader>
-                <CardContent className="space-y-1 -mt-2">
+                <CardContent className="space-y-1 -mt-2 px-0">
                     {mostTraded.map((stock) => (
                         <div key={stock.symbol} className="flex items-center justify-between p-2 rounded-lg">
                             <div className="flex items-center space-x-3">
@@ -181,11 +184,11 @@ const InvestmentPage = () => {
             </Card>
 
             <Card className={cardStyle}>
-                <CardHeader className="flex flex-row items-center pl-4 pr-3">
+                <CardHeader className="flex flex-row items-center pl-4 pr-3 px-0">
                     <CardTitle className="font-medium text-gray-700">Popular first time buys</CardTitle>
                     <ChevronRight className="w-5 h-5 text-gray-700" />
                 </CardHeader>
-                <CardContent className="-mt-2 px-4">
+                <CardContent className="-mt-2 px-0">
                     <Tabs defaultValue="stocks" className="w-full">
                         <TabsContent value="stocks">
                             <div className="grid grid-cols-4 gap-x-2">
