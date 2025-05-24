@@ -3,7 +3,7 @@ import { Goal, Home, PlusCircle, TicketPercent, TrendingUp } from 'lucide-react'
 
 const navItems = [
     { title: 'Home', icon: Home, link: '/analytics' },
-    { title: 'Invest', icon: TrendingUp, link: '/invest' },
+    { title: 'Invest', icon: TrendingUp, link: '/investments' },
     { title: 'Goals', icon: Goal, link: '/goals', notification: true },
     { title: 'Discounts', icon: TicketPercent, link: '/discounts' },
     { title: 'RevPoints', icon: PlusCircle, link: '/points' },
