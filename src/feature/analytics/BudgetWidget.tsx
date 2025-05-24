@@ -105,7 +105,7 @@ const BudgetWidget = () => {
                     <ResponsiveContainer width="100%" height="100%">
                         <PieChart>
                             <Pie
-                                data={insight.chartData.slice(0, 5)}
+                                data={insight!.chartData.slice(0, 5)}
                                 dataKey="value"
                                 nameKey="label"
                                 cx="50%"
@@ -117,7 +117,7 @@ const BudgetWidget = () => {
                                 stroke="rgba(148, 163, 184, 0.2)"
                                 strokeWidth={1}
                             >
-                                {insight.chartData.slice(0, 5).map((entry, index) => (
+                                {insight!.chartData.slice(0, 5).map((entry, index) => (
                                     <Cell
                                         key={`cell-${index}`}
                                         fill={COLORS[index % COLORS.length]}
@@ -130,7 +130,7 @@ const BudgetWidget = () => {
 
                     {/* Legend */}
                     <div className="absolute left-2 right-2 flex flex-wrap gap-2 justify-center bottom-[-1.5rem] sm:bottom-2">
-                        {insight.chartData.slice(0, 5).map((entry, index) => (
+                        {insight!.chartData.slice(0, 5).map((entry, index) => (
                             <div key={entry.label} className="flex items-center gap-1 text-xs text-slate-300">
                                 <div
                                     className="w-3 h-3 rounded-sm"
