@@ -2,6 +2,7 @@ import { Outlet, createRootRouteWithContext } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 
 import Header from '../components/Header'
+import { MaxWidthWrapper } from '../components/layout/MaxWidthWrapper.tsx'
 
 import TanStackQueryLayout from '../integrations/tanstack-query/layout.tsx'
 
@@ -14,9 +15,11 @@ interface MyRouterContext {
 export const Route = createRootRouteWithContext<MyRouterContext>()({
   component: () => (
     <>
-      <Header />
+      <MaxWidthWrapper>
+        <Header />
 
-      <Outlet />
+        <Outlet />
+      </MaxWidthWrapper>
       <TanStackRouterDevtools />
 
       <TanStackQueryLayout />
