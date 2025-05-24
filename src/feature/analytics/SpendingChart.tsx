@@ -2,10 +2,11 @@ import { Card } from "@/components/ui/card";
 import { AreaChart, Area, XAxis, ResponsiveContainer, Tooltip } from "recharts";
 
 type SpendingChartProps = {
+	title?: string;
 	data: { day: number; amount: number }[];
 };
 
-const SpendingChart = ({ data }: SpendingChartProps) => {
+const SpendingChart = ({ data, title }: SpendingChartProps) => {
 	const cumulativeData = data.reduce<{ day: number; amount: number }[]>(
 		(acc, curr) => {
 			const last = acc.length ? acc[acc.length - 1].amount : 0;
@@ -18,9 +19,9 @@ const SpendingChart = ({ data }: SpendingChartProps) => {
 	const total = cumulativeData[cumulativeData.length - 1]?.amount || 0;
 
 	return (
-		<Card className="bg-slate-800/50 border-slate-700 p-4 px-6 pb-0 backdrop-blur-sm">
+		<Card className="bg-white/5 border border-white/10 backdrop-blur-md shadow-md transition-all duration-200 gap-4 pt-3 pb-4 px-6">
 			<div>
-				<div className="text-slate-400 text-sm mb-2">Spent</div>
+				<div className="text-slate-400 text-sm mb-2">{title ?? 'Spent'}</div>
 				<div className="flex items-baseline gap-3">
 					<span className="text-2xl font-bold text-white">
 						{total.toLocaleString("de-DE", {

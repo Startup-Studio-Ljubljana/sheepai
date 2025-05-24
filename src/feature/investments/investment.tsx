@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useMemo } from 'react';
 import {
     Card,
     CardHeader,
@@ -9,6 +9,10 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, TrendingUp, TrendingDown } from "lucide-react";
+import SpendingChart from '../analytics/SpendingChart';
+import { isAfter, subDays } from 'date-fns';
+import { parseISO } from 'date-fns';
+import data from "../../../bank_account_data.json";
 
 const topGainers = [
     { symbol: "DOUG", percentage: 32.71, logo: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=100&h=100&fit=crop&crop=center" },
@@ -29,18 +33,39 @@ const popularStocks = [
     { symbol: "IUSU", percentage: null, logo: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=100&h=100&fit=crop&crop=center" },
 ];
 
-const cardStyle = "bg-white/5 border border-white/10 backdrop-blur-md shadow-md transition-all duration-200";
+const cardStyle = "bg-white/5 border border-white/10 backdrop-blur-md shadow-md transition-all duration-200 gap-4 pt-3 pb-4";
 
 const InvestmentPage = () => {
+    const last30DaysData = useMemo(() => {
+        const today = new Date();
+        const cutoff = subDays(today, 30);
+        const dailyTotals: Record<number, number> = {};
+
+        data.transactions.forEach(tx => {
+            const date = parseISO(tx.date);
+            if (tx.amount < 0 && isAfter(date, cutoff)) {
+                const day = date.getDate();
+                dailyTotals[day] = (dailyTotals[day] || 0) + Math.abs(tx.amount);
+            }
+        });
+
+        return Object.entries(dailyTotals).map(([day, amount]) => ({
+            day: Number(day),
+            amount: Number(amount.toFixed(2))
+        }));
+    }, []);
+
     return (
-        <div className="min-h-screen bg-gray-950 text-white p-6 space-y-6">
+        <div className="min-h-screen text-white p-4 space-y-6">
+
+<SpendingChart data={last30DaysData} title="Balance"/>
 
             <Card className={cardStyle}>
-                <CardHeader className="flex flex-row items-center justify-between">
-                    <CardTitle className="text-lg font-medium text-gray-300">Our Recommended Funds</CardTitle>
+                <CardHeader className="flex flex-row items-center pl-4 pr-3">
+                    <CardTitle className="font-medium text-gray-300">Our Recommended Funds</CardTitle>
                     <ChevronRight className="w-5 h-5 text-gray-400" />
                 </CardHeader>
-                <CardContent>
+                <CardContent className='px-4'>
                     <div className="grid grid-cols-4 gap-x-2">
                         {[
                             {
@@ -66,7 +91,7 @@ const InvestmentPage = () => {
                         ].map((fund) => (
                             <div
                                 key={fund.symbol}
-                                className="flex flex-col items-center p-2 rounded-lg bg-gray-800/50 hover:bg-gray-800 transition-colors text-sm"
+                                className="flex flex-col items-center p-2 rounded-lg text-sm"
                             >
                                 <div className="w-10 h-10 rounded-full overflow-hidden mb-1 border border-gray-600">
                                     <img src={fund.logo} alt={fund.symbol} className="w-full h-full object-cover" />
@@ -91,16 +116,16 @@ const InvestmentPage = () => {
             </Card>
 
             <Card className={cardStyle}>
-                <CardHeader className="flex flex-row items-center justify-between">
-                    <CardTitle className="text-lg font-medium text-gray-300">Today's top movers</CardTitle>
+                <CardHeader className="flex flex-row items-center pl-4 pr-3">
+                    <CardTitle className="font-medium text-gray-300">Today's top movers</CardTitle>
                     <ChevronRight className="w-5 h-5 text-gray-400" />
                 </CardHeader>
-                <CardContent>
+                <CardContent className='px-4'>
                     <Tabs defaultValue="gainers" className="w-full">
                         <TabsContent value="gainers">
                             <div className="grid grid-cols-4 gap-x-2">
                                 {topGainers.map((stock) => (
-                                    <div key={stock.symbol} className="flex flex-col items-center p-2 rounded-lg bg-gray-800/50 hover:bg-gray-800 transition-colors text-sm">
+                                    <div key={stock.symbol} className="flex flex-col items-center p-2 text-sm">
                                         <div className="w-10 h-10 rounded-full overflow-hidden mb-1 border border-gray-600">
                                             <img
                                                 src={stock.logo}
@@ -122,13 +147,13 @@ const InvestmentPage = () => {
             </Card>
 
             <Card className={cardStyle}>
-                <CardHeader className="flex flex-row items-center justify-between pb-2">
-                    <CardTitle className="text-lg font-medium text-gray-300">Most traded this week</CardTitle>
+                <CardHeader className="flex flex-row items-center pb-2 pl-4 pr-3">
+                    <CardTitle className="font-medium text-gray-300">Most traded this week</CardTitle>
                     <ChevronRight className="w-5 h-5 text-gray-400" />
                 </CardHeader>
-                <CardContent className="space-y-3">
+                <CardContent className="space-y-1 -mt-2 px-4">
                     {mostTraded.map((stock) => (
-                        <div key={stock.symbol} className="flex items-center justify-between p-3 rounded-lg bg-gray-800/50 hover:bg-gray-800 transition-colors">
+                        <div key={stock.symbol} className="flex items-center justify-between p-2 rounded-lg">
                             <div className="flex items-center space-x-3">
                                 <div className="w-10 h-10 rounded-full overflow-hidden border border-gray-600">
                                     <img
@@ -157,16 +182,16 @@ const InvestmentPage = () => {
             </Card>
 
             <Card className={cardStyle}>
-                <CardHeader className="flex flex-row items-center justify-between">
-                    <CardTitle className="text-lg font-medium text-gray-300">Popular first time buys</CardTitle>
+                <CardHeader className="flex flex-row items-center pl-4 pr-3">
+                    <CardTitle className="font-medium text-gray-300">Popular first time buys</CardTitle>
                     <ChevronRight className="w-5 h-5 text-gray-400" />
                 </CardHeader>
-                <CardContent>
+                <CardContent className="-mt-2 px-4">
                     <Tabs defaultValue="stocks" className="w-full">
                         <TabsContent value="stocks">
                             <div className="grid grid-cols-4 gap-x-2">
                                 {popularStocks.map((stock) => (
-                                    <div key={stock.symbol} className="flex flex-col items-center p-2 rounded-lg bg-gray-800/50 hover:bg-gray-800 transition-colors text-sm">
+                                    <div key={stock.symbol} className="flex flex-col items-center p-2 rounded-lg text-sm">
                                         <div className="w-10 h-10 rounded-full overflow-hidden mb-1 border border-gray-600">
                                             <img
                                                 src={stock.logo}

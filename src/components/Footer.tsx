@@ -11,7 +11,7 @@ const navItems = [
 
 export default function Footer() {
     return (
-        <div className="fixed bottom-0 left-0 right-0 bg-black/40 backdrop-blur-lg border-t border-white/10 z-50">
+        <div className="fixed bottom-0 left-0 right-0 bg-black/25 backdrop-blur-lg border-t border-white/10 z-50">
             <div className="flex justify-around items-center py-3 pt-4 pb-7 px-3">
                 {navItems.map((item) => (
                     <Link to={item.link} key={item.title} className="flex flex-col items-center space-y-1">

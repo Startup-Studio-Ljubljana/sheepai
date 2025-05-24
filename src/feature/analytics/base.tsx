@@ -8,7 +8,6 @@ import { parseISO, subDays, isAfter } from "date-fns";
 import { useInView } from 'react-intersection-observer';
 
 const Base = () => {
-    const { ref: budgetRef, inView: showBudget } = useInView({ triggerOnce: true, threshold: 0.1 });
     const last30DaysData = useMemo(() => {
         const today = new Date();
         const cutoff = subDays(today, 30);
