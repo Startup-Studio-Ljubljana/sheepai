@@ -232,8 +232,11 @@ const Goals = () => {
 
     return (
         <div className="mb-6 px-4 flex-1">
+            <h1 className="text-xl font-semibold w-full mt-2 mb-2 mx-2 text-gray-900">
+				Goals
+			</h1> 
 
-            <div className="flex justify-center space-x-2 p-4">
+            <div className="flex space-x-2 py-4 mb-2">
                 {sections.map((section) => (
                     <button
                         key={section.id}
@@ -241,12 +244,14 @@ const Goals = () => {
                         onClick={() =>
                             setActiveSection(section.id as "My goals" | "Recommendations")
                         }
-                        className={` flex items-center space-x-1.5 px-3 py-1.5 border border-gray-150
-                                rounded-full text-sm font-medium transition-colors shadow-xs ${
-                            activeSection === section.id
-                                ? "bg-gray-200 border-gray-300 text-gray-900 backdrop-blur-sm"
-                                : "bg-white text-gray-700 hover:bg-white/15"
-                        }`}
+                        className={`
+                            flex items-center space-x-1.5 px-3 py-1.5 border border-gray-150
+                            rounded-full text-sm font-medium transition-colors shadow-xs
+                            ${
+                                activeSection === section.id
+                                    ? "bg-primary/5 border-primary text-primary backdrop-blur-sm"
+                                    : " bg-white text-gray-700 hover:bg-white/15"
+                            }`}
                     >
                         <section.icon className="w-4 h-4"/>
                         <span>{section.title}</span>
@@ -256,8 +261,6 @@ const Goals = () => {
 
             {activeSection === "My goals" && (
                 <React.Fragment>
-                    <h1 className="text-xl font-semibold w-full text-gray-900 mb-4 mx-2">My Goals</h1>
-
                     <div className="pb-24 space-y-4">
                         {goals.map(goal => (
                             <div key={goal.id}>
@@ -331,8 +334,6 @@ const Goals = () => {
                 <React.Fragment>
                     <div className="pb-6 mb-[160px]">
                         <div className="mb-6">
-                            <h1 className="text-xl font-semibold w-full text-gray-900 mb-6 mt-1 mx-2">Recommended
-                                actions</h1>
 
                             <div className="space-y-3">
                                 {suggestions.map(suggestion => (
