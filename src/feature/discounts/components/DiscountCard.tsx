@@ -45,7 +45,7 @@ const DiscountCard = ({
 
 			<button
 				type="button"
-				className="mb-1 mt-2 w-full bg-white/75 hover:bg-gray-100 text-gray-900 font-semibold py-2 px-3 rounded-full transition-colors flex items-center justify-center space-x-2"
+				className="mb-1 mt-2 w-full bg-white/90 hover:bg-gray-100 text-gray-900 font-semibold py-2 px-3 rounded-full transition-colors flex items-center justify-center space-x-2"
 			>
 				<Check className="w-4 h-4" />
 				<span className="text-sm">Activate</span>
