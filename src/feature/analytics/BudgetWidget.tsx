@@ -59,7 +59,7 @@ const BudgetWidget = () => {
 	}, []);
 
 	return (
-		<Card className="bg-slate-800/50 border-slate-700 p-4 backdrop-blur-sm relative pt-8">
+		<Card className="bg-white/5 border border-white/10 backdrop-blur-md shadow-md transition-all duration-200 gap-4 pt-8 pb-4 px-6">
 			<div className="text-slate-400 text-sm mb-2 absolute left-7 top-4">
 				Split
 			</div>

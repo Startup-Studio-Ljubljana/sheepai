@@ -1,11 +1,8 @@
 import SpendingChart from "@/feature/analytics/SpendingChart.tsx";
-import IncomeWidget from "@/feature/analytics/IncomeWidget.tsx";
 import BudgetWidget from "@/feature/analytics/BudgetWidget.tsx";
-import CashflowWidget from "@/feature/analytics/CashOutflowWidget.tsx";
 import { useMemo } from "react";
 import data from "../../../bank_account_data.json";
 import { parseISO, subDays, isAfter } from "date-fns";
-import { useInView } from 'react-intersection-observer';
 
 const Base = () => {
     const last30DaysData = useMemo(() => {
