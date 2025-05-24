@@ -5,10 +5,10 @@ import CashflowWidget from "@/feature/analytics/CashOutflowWidget.tsx";
 import { useMemo } from "react";
 import data from "../../../bank_account_data.json";
 import { parseISO, subDays, isAfter } from "date-fns";
-
+import { useInView } from 'react-intersection-observer';
 
 const Base = () => {
-
+    const { ref: budgetRef, inView: showBudget } = useInView({ triggerOnce: true, threshold: 0.1 });
     const last30DaysData = useMemo(() => {
         const today = new Date();
         const cutoff = subDays(today, 30);
@@ -28,6 +28,22 @@ const Base = () => {
         }));
     }, []);
 
+    const totals = useMemo(() => {
+        const today = new Date();
+        const cutoff = subDays(today, 30);
+        let income = 0;
+        let expenses = 0;
+
+        data.transactions.forEach(tx => {
+            const date = parseISO(tx.date);
+            if (isAfter(date, cutoff)) {
+                if (tx.amount > 0) income += tx.amount;
+                else expenses += Math.abs(tx.amount);
+            }
+        });
+
+        return { income, expenses };
+    }, []);
 
     return (
         <div className="min-h-screen p-4">
@@ -37,17 +53,15 @@ const Base = () => {
                     {/* Spending Chart - Full Width */}
                     <SpendingChart data={last30DaysData} />
 
-
                     {/* Second Row - Income and Cashflow */}
-                    <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <IncomeWidget />
-                        <CashflowWidget />
+                        <CashflowWidget income={totals.income} expenses={totals.expenses} />
                     </div>
 
                     {/* Budget Section */}
-                    <div className="space-y-4">
-                        <h2 className="text-white text-xl font-semibold">Budget</h2>
-                        <BudgetWidget />
+                    <div className="space-y-4" ref={budgetRef}>
+                        {showBudget && <BudgetWidget />}
                     </div>
                 </div>
             </div>
