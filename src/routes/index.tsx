@@ -19,10 +19,6 @@ function App() {
     <>
       <Toaster />
       <div className="text-center">
-        <header className="min-h-screen flex flex-col items-center justify-center bg-[#282c34] text-white text-[calc(10px+2vmin)]">
-          <h1>SheepAI</h1>
-          <Button onClick={handleClick}>Click me</Button>
-        </header>
       </div>
     </>
   )
