@@ -4,7 +4,7 @@ import type { ChatCompletion } from "openai/resources/chat/completions/completio
 import data from "../../../bank_account_data.json";
 
 const openai = new OpenAI({
-    apiKey: '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',
+    apiKey: '',
 });
 
 export function getResponse(prompt: string, lastNDays: number): APIPromise<ChatCompletion> {
