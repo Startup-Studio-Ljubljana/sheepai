@@ -1,11 +1,29 @@
 import { Link } from '@tanstack/react-router'
 import { Cog, Search } from 'lucide-react'
-import { Input } from './ui/input'
+import { useEffect, useState } from 'react'
 import { Button } from './ui/button'
+import { Input } from './ui/input'
 
 export default function Header() {
+    const [scrolled, setScrolled] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 0)
+        }
+
+        window.addEventListener('scroll', handleScroll)
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
     return (
-        <div className="relative z-10 flex items-center justify-between p-4">
+        <div
+            className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 transition-all duration-300 ease-in-out ${
+                scrolled ? 'bg-black/20 backdrop-blur-sm' : ''
+            }`}
+        >
             <div className="flex items-center space-x-3">
                 <div className="size-8 bg-pink-500 rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-sm">AD</span>

@@ -11,11 +11,18 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
+import { Route as PointsImport } from './routes/points'
 import { Route as AnalyticsImport } from './routes/analytics'
 import { Route as IndexImport } from './routes/index'
 import { Route as DemoTanstackQueryImport } from './routes/demo.tanstack-query'
 
 // Create/Update Routes
+
+const PointsRoute = PointsImport.update({
+  id: '/points',
+  path: '/points',
+  getParentRoute: () => rootRoute,
+} as any)
 
 const AnalyticsRoute = AnalyticsImport.update({
   id: '/analytics',
@@ -53,6 +60,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AnalyticsImport
       parentRoute: typeof rootRoute
     }
+    '/points': {
+      id: '/points'
+      path: '/points'
+      fullPath: '/points'
+      preLoaderRoute: typeof PointsImport
+      parentRoute: typeof rootRoute
+    }
     '/demo/tanstack-query': {
       id: '/demo/tanstack-query'
       path: '/demo/tanstack-query'
@@ -68,12 +82,14 @@ declare module '@tanstack/react-router' {
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/analytics': typeof AnalyticsRoute
+  '/points': typeof PointsRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/analytics': typeof AnalyticsRoute
+  '/points': typeof PointsRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
 }
 
@@ -81,27 +97,30 @@ export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
   '/analytics': typeof AnalyticsRoute
+  '/points': typeof PointsRoute
   '/demo/tanstack-query': typeof DemoTanstackQueryRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/analytics' | '/demo/tanstack-query'
+  fullPaths: '/' | '/analytics' | '/points' | '/demo/tanstack-query'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/analytics' | '/demo/tanstack-query'
-  id: '__root__' | '/' | '/analytics' | '/demo/tanstack-query'
+  to: '/' | '/analytics' | '/points' | '/demo/tanstack-query'
+  id: '__root__' | '/' | '/analytics' | '/points' | '/demo/tanstack-query'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AnalyticsRoute: typeof AnalyticsRoute
+  PointsRoute: typeof PointsRoute
   DemoTanstackQueryRoute: typeof DemoTanstackQueryRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AnalyticsRoute: AnalyticsRoute,
+  PointsRoute: PointsRoute,
   DemoTanstackQueryRoute: DemoTanstackQueryRoute,
 }
 
@@ -117,6 +136,7 @@ export const routeTree = rootRoute
       "children": [
         "/",
         "/analytics",
+        "/points",
         "/demo/tanstack-query"
       ]
     },
@@ -125,6 +145,9 @@ export const routeTree = rootRoute
     },
     "/analytics": {
       "filePath": "analytics.tsx"
+    },
+    "/points": {
+      "filePath": "points.tsx"
     },
     "/demo/tanstack-query": {
       "filePath": "demo.tanstack-query.tsx"
