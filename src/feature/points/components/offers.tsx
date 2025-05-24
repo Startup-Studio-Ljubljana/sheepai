@@ -86,7 +86,7 @@ export default function Offers() {
                                     <div className="w-full bg-white/20 rounded-full h-1.5">
                                         <div
                                             className={`h-1.5 rounded-full transition-all duration-300 ${
-                                                isCloseToRedeem ? 'bg-green-400' : 'bg-white/60'
+                                                isCloseToRedeem ? 'bg-green-400' : 'bg-gray-500/60'
                                             }`}
                                             style={{ width: `${Math.min(progress, 100)}%` }}
                                         ></div>
