@@ -23,3 +23,5 @@ export function Notification({title, description}: Props) {
     )
 }
 
+export default Notification;
+

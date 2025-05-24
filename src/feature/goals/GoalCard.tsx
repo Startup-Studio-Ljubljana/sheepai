@@ -64,11 +64,11 @@ const GoalCard = ({
 					<p className="text-white/70 text-xs">
 						{currentAmount}€
 					</p>
-					
+
 						<p className="text-white/70 text-xs font-medium">
 							{targetAmount}€
 						</p>
-					
+
 				</div>
 			</div>
 		</div>
