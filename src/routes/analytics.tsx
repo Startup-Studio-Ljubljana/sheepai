@@ -39,9 +39,12 @@ function AnalyticsPage() {
             }))
         )
 
-        const savings = []
+        const savings: string[] = []
+        //@ts-ignore
         if (categoryMap.subscriptions > 30) savings.push('Review your subscriptions — over 30€ spent this month.')
+        //@ts-ignore
         if (categoryMap.restaurants > 100) savings.push('Consider reducing dining out — over 100€ this month.')
+        //@ts-ignore
         if (categoryMap.coffee > 40) savings.push('Too much coffee? More than 40€ spent!')
 
         setSuggestions(savings)

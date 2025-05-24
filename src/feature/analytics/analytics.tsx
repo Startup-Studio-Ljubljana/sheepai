@@ -1,9 +1,9 @@
-import { createRoute } from '@tanstack/react-router'
 import { Route } from '@/routes/__root'
+import { createRoute } from '@tanstack/react-router'
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { ResponsiveContainer, LineChart, Line, PieChart, Pie, Cell, Tooltip } from 'recharts'
 import { useEffect, useState } from 'react'
+import { Cell, Line, LineChart, Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts'
 import data from '../../../bank_account_data.json'
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#A28CFF', '#FF6699']
@@ -20,11 +20,11 @@ function Analytics() {
         const dailyMap: Record<string, number> = {}
         const categoryMap: Record<string, number> = {}
 
-        filtered.forEach(tx => {
+        for (const tx of filtered) {
             const day = new Date(tx.date).getDate()
             dailyMap[day] = (dailyMap[day] || 0) + Math.abs(tx.amount)
             categoryMap[tx.category] = (categoryMap[tx.category] || 0) + Math.abs(tx.amount)
-        })
+        }
 
         setChartData(Object.keys(dailyMap).map(day => ({ day, amount: dailyMap[day] })))
 
@@ -36,7 +36,7 @@ function Analytics() {
             }))
         )
 
-        const savings = []
+        const savings: string[] = []
         if (categoryMap.subscriptions > 30) savings.push('Review your subscriptions — over 30€ spent this month.')
         if (categoryMap.restaurants > 100) savings.push('Consider reducing dining out — over 100€ this month.')
         if (categoryMap.coffee > 40) savings.push('Too much coffee? More than 40€ spent!')
@@ -69,7 +69,7 @@ function Analytics() {
                         <PieChart>
                             <Pie data={categoryData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={80}>
                                 {categoryData.map((entry, index) => (
-                                    <Cell key={`cell-${index}`} fill={entry.color} />
+                                    <Cell key={`cell-${entry.name}-${index}`} fill={entry.color} />
                                 ))}
                             </Pie>
                             <Tooltip />
