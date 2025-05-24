@@ -4,9 +4,10 @@ import { AreaChart, Area, XAxis, ResponsiveContainer, Tooltip } from "recharts";
 type SpendingChartProps = {
 	title?: string;
 	data: { day: number; amount: number }[];
+	total: number;
 };
 
-const SpendingChart = ({ data, title }: SpendingChartProps) => {
+const SpendingChart = ({ data, title, total }: SpendingChartProps) => {
 	const cumulativeData = data.reduce<{ day: number; amount: number }[]>(
 		(acc, curr) => {
 			const last = acc.length ? acc[acc.length - 1].amount : 0;
@@ -15,8 +16,6 @@ const SpendingChart = ({ data, title }: SpendingChartProps) => {
 		},
 		[],
 	);
-
-	const total = cumulativeData[cumulativeData.length - 1]?.amount || 0;
 
 	return (
 		<Card className="transition-all duration-200 gap-4 pt-3 pb-4 px-6">

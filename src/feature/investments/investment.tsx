@@ -60,7 +60,7 @@ const InvestmentPage = () => {
 <h1 className="text-xl font-semibold w-full mb-6 mx-2 text-gray-900">
 				Investments
 			</h1>
-<SpendingChart data={last30DaysData} title="Balance"/>
+<SpendingChart data={last30DaysData} title="Balance" total={20531.23}/>
 
             <Card className={cardStyle}>
                 <CardHeader className="flex flex-row items-center p-0">
