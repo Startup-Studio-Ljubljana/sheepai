@@ -2,11 +2,11 @@ import { Link } from '@tanstack/react-router';
 import { Bitcoin, CreditCard, Home, PlusCircle, TrendingUp } from 'lucide-react';
 
 const navItems = [
-    { title: 'Home', icon: Home, link: '/' },
+    { title: 'Home', icon: Home, link: '/analytics' },
     { title: 'Invest', icon: TrendingUp, link: '/invest' },
     { title: 'Payments', icon: CreditCard, link: '/payments', notification: true },
     { title: 'Crypto', icon: Bitcoin, link: '/crypto' },
-    { title: 'RevPoints', icon: PlusCircle, link: '/revpoints' },
+    { title: 'RevPoints', icon: PlusCircle, link: '/points' },
 ];
 
 export default function Footer() {
