@@ -56,7 +56,7 @@ function RouteComponent() {
 				location: "City Center",
 				expiresAt: "Jan 15",
 				backgroundColor: "bg-gradient-to-br from-green-500 to-emerald-600",
-				logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Gold%27s_Gym_logo.svg/1200px-Gold%27s_Gym_logo.svg.png",
+				logoUrl: "https://cdn-icons-png.flaticon.com/512/8521/8521317.png",
 			},
 			{
 				id: "3",
@@ -67,7 +67,7 @@ function RouteComponent() {
 				location: "Uptown",
 				expiresAt: "Dec 25",
 				backgroundColor: "bg-gradient-to-br from-red-500 to-pink-600",
-				logoUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Olive_Garden_logo.svg/1200px-Olive_Garden_logo.svg.png",
+				logoUrl: "https://cdn-icons-png.flaticon.com/512/7571/7571971.png",
 			},
 		],
 		popularDiscounts: [
