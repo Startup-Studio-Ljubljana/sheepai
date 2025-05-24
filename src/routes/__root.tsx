@@ -27,7 +27,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
       <Header />
 
       {/* Main content */}
-      <div className="relative z-10 px-4 pb-20 pt-20">
+      <div className="relative z-10 pb-20 pt-20">
         <Outlet />
       </div>
       <Footer />
