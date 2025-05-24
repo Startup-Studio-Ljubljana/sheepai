@@ -20,8 +20,8 @@ export default function Header() {
 
     return (
         <div
-            className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between p-4 transition-all duration-300 ease-in-out ${
-                scrolled ? 'bg-black/20 backdrop-blur-sm' : ''
+            className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between m-1 p-3 transition-all duration-300 ease-in-out ${
+                scrolled ? 'bg-black/20 backdrop-blur-sm rounded-xl' : ''
             }`}
         >
             <div className="flex items-center space-x-3">
