@@ -46,7 +46,7 @@ const offers = [
 export default function Offers() {
     return (
         <div className="mx-4">
-            <h3 className="text-white text-lg font-semibold mb-4">Redeem offers</h3>
+            <h3 className="text-gray-700 text-lg font-semibold mb-4">Redeem offers</h3>
             <div className="flex flex-col gap-4">
                 {offers.map(offer => {
                     const IconComponent = offer.icon
@@ -56,24 +56,24 @@ export default function Offers() {
                     return (
                         <Card
                             key={offer.id}
-                            className="bg-white/10 border-white/20 backdrop-blur-sm rounded-2xl p-3 relative overflow-hidden flex flex-row items-center"
+                            className="p-3 relative overflow-hidden flex flex-row items-center gap-2"
                         >
                             <div
                                 className={`size-14 ${offer.color} rounded-xl flex items-center justify-center`}
                             >
-                                <IconComponent className="w-6 h-6 text-white" />
+                                <IconComponent className="w-6 h-6 text-gray-700" />
                             </div>
                             <div className="flex-1 flex flex-col gap-1">
                                 <div>
-                                    <h4 className="text-white font-semibold text-sm">
+                                    <h4 className="text-gray-700 font-semibold text-sm">
                                         {offer.title}
                                     </h4>
-                                    <p className="text-white/70 text-[10px]">{offer.description}</p>
+                                    <p className="text-gray-700/70 text-[10px]">{offer.description}</p>
                                 </div>
 
                                 <div className="space-y-1">
                                     <div className="flex justify-between items-center">
-                                        <span className="text-white/80 text-[10px]">
+                                        <span className="text-gray-700/80 text-[10px]">
                                             {offer.pointsEarned}/{offer.pointsRequired} pts
                                         </span>
                                         {isCloseToRedeem && (

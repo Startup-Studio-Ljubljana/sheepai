@@ -32,7 +32,7 @@ const popularStocks = [
     { symbol: "IUSU", percentage: null, logo: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=100&h=100&fit=crop&crop=center" },
 ];
 
-const cardStyle = "bg-white/5 border border-white/10 backdrop-blur-md shadow-md transition-all duration-200 gap-4 pt-3 pb-4";
+const cardStyle = "transition-all duration-200 gap-4 pt-3 pb-4";
 
 const InvestmentPage = () => {
     const last30DaysData = useMemo(() => {
@@ -60,7 +60,7 @@ const InvestmentPage = () => {
 <SpendingChart data={last30DaysData} title="Balance"/>
 
             <Card className={cardStyle}>
-                <CardHeader className="flex flex-row items-center pl-4 pr-3">
+                <CardHeader className="flex flex-row items-center p-0">
                     <CardTitle className="font-medium text-gray-700">Our Recommended Funds</CardTitle>
                     <ChevronRight className="w-5 h-5 text-gray-700" />
                 </CardHeader>
@@ -92,10 +92,10 @@ const InvestmentPage = () => {
                                 key={fund.symbol}
                                 className="flex flex-col items-center p-2 rounded-lg text-sm"
                             >
-                                <div className="w-10 h-10 rounded-full overflow-hidden mb-1 border border-gray-600">
+                                <div className="w-10 h-10 rounded-full overflow-hidden mb-1 border border-gray-200">
                                     <img src={fund.logo} alt={fund.symbol} className="w-full h-full object-cover" />
                                 </div>
-                                <div className="text-xs font-medium text-gray-200">{fund.symbol}</div>
+                                <div className="text-xs font-medium text-gray-600">{fund.symbol}</div>
                                 <div
                                     className={`text-xs flex items-center ${
                                         fund.percentage > 0 ? 'text-green-400' : 'text-red-400'
@@ -115,7 +115,7 @@ const InvestmentPage = () => {
             </Card>
 
             <Card className={cardStyle}>
-                <CardHeader className="flex flex-row items-center pl-4 pr-3">
+                <CardHeader className="flex flex-row items-center p-0">
                     <CardTitle className="font-medium text-gray-700">Today's top movers</CardTitle>
                     <ChevronRight className="w-5 h-5 text-gray-700" />
                 </CardHeader>
@@ -132,8 +132,8 @@ const InvestmentPage = () => {
                                                 className="w-full h-full object-cover"
                                             />
                                         </div>
-                                        <div className="text-xs font-medium text-gray-200">{stock.symbol}</div>
-                                        <div className="text-xs text-green-400 flex items-center">
+                                        <div className="text-xs font-medium text-gray-700">{stock.symbol}</div>
+                                        <div className="text-xs text-green-600 flex items-center">
                                             <TrendingUp className="w-3 h-3 mr-1" />
                                             {stock.percentage}%
                                         </div>
@@ -146,11 +146,11 @@ const InvestmentPage = () => {
             </Card>
 
             <Card className={cardStyle}>
-                <CardHeader className="flex flex-row items-center pb-2 pl-4 pr-3">
+                <CardHeader className="flex flex-row items-center pb-2 p-0">
                     <CardTitle className="font-medium text-gray-700">Most traded this week</CardTitle>
                     <ChevronRight className="w-5 h-5 text-gray-700" />
                 </CardHeader>
-                <CardContent className="space-y-1 -mt-2 px-4">
+                <CardContent className="space-y-1 -mt-2">
                     {mostTraded.map((stock) => (
                         <div key={stock.symbol} className="flex items-center justify-between p-2 rounded-lg">
                             <div className="flex items-center space-x-3">
@@ -162,14 +162,14 @@ const InvestmentPage = () => {
                                     />
                                 </div>
                                 <div>
-                                    <div className="font-medium text-gray-100">{stock.symbol}</div>
-                                    <div className="text-xs text-gray-400">
+                                    <div className="font-medium text-gray-700">{stock.symbol}</div>
+                                    <div className="text-xs text-gray-600">
                                         {stock.buys}% Buys • {stock.sells}% Sells
                                     </div>
                                 </div>
                             </div>
                             <div className="text-right">
-                                <div className="font-medium text-gray-100">{stock.price}</div>
+                                <div className="font-medium text-gray-700">{stock.price}</div>
                                 <div className="text-sm text-red-400 flex items-center justify-end">
                                     <TrendingDown className="w-3 h-3 mr-1" />
                                     {Math.abs(stock.percentage)}%
@@ -198,7 +198,7 @@ const InvestmentPage = () => {
                                                 className="w-full h-full object-cover"
                                             />
                                         </div>
-                                        <div className="text-xs font-medium text-gray-200">{stock.symbol}</div>
+                                        <div className="text-xs font-medium text-gray-700">{stock.symbol}</div>
                                         {stock.percentage !== null && (
                                             <div className={`text-xs flex items-center ${stock.percentage > 0 ? 'text-green-400' : 'text-red-400'}`}>
                                                 {stock.percentage > 0 ? <TrendingUp className="w-3 h-3 mr-1" /> : <TrendingDown className="w-3 h-3 mr-1" />}

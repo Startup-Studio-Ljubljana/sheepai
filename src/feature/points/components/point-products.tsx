@@ -10,15 +10,15 @@ export function PointProducts() {
     ]
 
     return (
-        <Card className="bg-white/10 border-white/20 backdrop-blur-sm rounded-3xl p-4 mx-4 gap-2">
-        <h3 className="text-white/70 text-sm font-medium mb-4">Products</h3>
+        <Card className="p-4 mx-4 gap-2">
+        <h3 className="text-gray-700 text-sm font-semibold mb-4">Products</h3>
         <div className="grid grid-cols-4 gap-4">
             {products.map((product) => (
                 <div key={product.label} className="flex flex-col items-center space-y-2">
-                    <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-sm">
-                        <product.icon className="w-6 h-6 text-white" />
+                    <div className="w-14 h-14 bg-primary/20 border border-primary/50 rounded-2xl flex items-center justify-center backdrop-blur-sm">
+                        <product.icon className="w-6 h-6 text-primary" />
                     </div>
-                    <span className="text-white text-[10px] font-semibold">{product.label}</span>
+                    <span className="text-gray-900 text-[10px] font-semibold">{product.label}</span>
                 </div>
             ))}
         </div>
