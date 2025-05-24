@@ -28,43 +28,15 @@ const Base = () => {
         }));
     }, []);
 
-    const totals = useMemo(() => {
-        const today = new Date();
-        const cutoff = subDays(today, 30);
-        let income = 0;
-        let expenses = 0;
-
-        data.transactions.forEach(tx => {
-            const date = parseISO(tx.date);
-            if (isAfter(date, cutoff)) {
-                if (tx.amount > 0) income += tx.amount;
-                else expenses += Math.abs(tx.amount);
-            }
-        });
-
-        return { income, expenses };
-    }, []);
-
     return (
-        <div className="min-h-screen p-4">
-            <div className="max-w-4xl mx-auto rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-xl p-6">
-                {/* Main Content Grid */}
-                <div className="space-y-6">
-                    {/* Spending Chart - Full Width */}
+        <div className="min-h-screen px-4">
+                <h1 className="text-xl font-semibold w-full text-white mb-6 mt-1 mx-2">Analytics</h1>
+                <div className="space-y-4">
                     <SpendingChart data={last30DaysData} />
-
-                    {/* Second Row - Income and Cashflow */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <IncomeWidget />
-                        <CashflowWidget income={totals.income} expenses={totals.expenses} />
-                    </div>
-
-                    {/* Budget Section */}
-                    <div className="space-y-4" ref={budgetRef}>
-                        {showBudget && <BudgetWidget />}
-                    </div>
-                </div>
+                    <BudgetWidget />
             </div>
+
+            <h1 className="text-xl font-semibold w-full text-white mb-6 mt-6 mx-2">Saving Opportunities</h1>
         </div>
     );
 };

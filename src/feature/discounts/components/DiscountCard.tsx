@@ -37,7 +37,7 @@ const DiscountCard = ({
 				<img
 					src={logoUrl}
 					alt={`${brand} logo`}
-					className="size-7 rounded-full mr-2"
+					className="size-7 rounded-full mr-2 object-contain"
 				/>
 				<h3 className="font-semibold text-white text-[17px]">{title}</h3>
 			</div>

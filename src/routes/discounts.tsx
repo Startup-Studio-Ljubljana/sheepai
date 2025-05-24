@@ -168,7 +168,7 @@ function RouteComponent() {
 					))}
 				</div>
 
-				<div className="px-6 pb-24 space-y-8 pt-4">
+				<div className="pb-24 space-y-8 pt-4">
 					{activeSectionDetails && (
 						<div>
 							<DiscountsCarousel discounts={currentDiscounts} />
