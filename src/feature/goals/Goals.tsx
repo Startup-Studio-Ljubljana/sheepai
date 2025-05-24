@@ -387,7 +387,7 @@ const Goals = () => {
                                             className={`w-full font-semibold py-2 px-3 rounded-xl transition-colors text-sm
                         ${selectedSuggestions.length === 0
                                                 ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                                                : "bg-green-600 hover:bg-green-700 text-gray-900"
+                                                : "bg-green-600 hover:bg-green-700 text-white"
                                             }`}
                                         >
                                             Apply Selected Actions
