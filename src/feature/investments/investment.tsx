@@ -72,7 +72,7 @@ const InvestmentPage = () => {
                         {[
                             {
                                 symbol: "EGF",
-                                logo: "https://images.unsplash.com/photo-1581092919555-3c7b9f09fca2?w=100&h=100&fit=crop&crop=center",
+                                logo: "https://media.istockphoto.com/id/1487894858/photo/candlestick-chart-and-data-of-financial-market.jpg?s=612x612&w=0&k=20&c=wZ6vVmbm4BV2JOePSnNNz-0aFVOJZ0P9nhdeOMGUg5I=",
                                 percentage: 1.62,
                             },
                             {
