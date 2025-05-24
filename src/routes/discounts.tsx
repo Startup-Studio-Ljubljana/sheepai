@@ -145,7 +145,7 @@ function RouteComponent() {
 	return (
 		<div className="min-h-screen text-white">
 			<div className="relative z-10 max-w-sm mx-auto min-h-screen backdrop-blur-sm px-2">
-					<h1 className="text-2xl font-semibold text-center mb-3 mt-2">Discounts</h1>
+					<h1 className="text-2xl font-semibold text-center mb-3 mt-2 text-gray-900">Discounts</h1>
 
 				<div className="flex justify-center space-x-2 p-4">
 					{sections.map((section) => (
@@ -155,11 +155,13 @@ function RouteComponent() {
 							onClick={() =>
 								setActiveSection(section.id as "nearYou" | "popular" | "forYou")
 							}
-							className={`flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-colors
+							className={`
+                                flex items-center space-x-1.5 px-3 py-1.5 border border-gray-150
+                                rounded-full text-sm font-medium transition-colors shadow-xs
 								${
 									activeSection === section.id
-										? "bg-white/20 text-white backdrop-blur-sm"
-										: "bg-white/10 text-white/70 hover:bg-white/15"
+										? "bg-gray-200 border-gray-300 text-gray-900 backdrop-blur-sm"
+										: " bg-white text-gray-700 hover:bg-white/15"
 								}`}
 						>
 							<section.icon className="w-4 h-4" />

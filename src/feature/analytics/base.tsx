@@ -5,6 +5,7 @@ import data from "../../../bank_account_data.json";
 import { parseISO, subDays, isAfter } from "date-fns";
 import SuggestionCard from "../goals/SuggestionCards";
 import { ArrowLeft, ChevronRight, ChevronsDown, ChevronsRight } from "lucide-react";
+import { Card } from "@/components/ui/card";
 
 const Base = () => {
 	const last30DaysData = useMemo(() => {
@@ -55,33 +56,33 @@ const Base = () => {
 
 	return (
 		<div className="min-h-screen px-4 pb-10">
-			<h1 className="text-xl font-semibold w-full text-white mb-6 mt-1 mx-2">
+			<h1 className="text-xl font-semibold w-full text-gray-900 mb-6 mt-1 mx-2">
 				Analytics
 			</h1>
-			<div className="space-y-4">
+			<div className="mt-2 flex flex-col gap-4">
 				<SpendingChart data={last30DaysData} />
 				<BudgetWidget />
 			</div>
 
-			<h1 className="text-xl font-semibold w-full text-white mb-6 mt-6 mx-2">
+			<h1 className="text-xl font-semibold w-full mb-4 mt-8 mx-2 text-gray-900">
 				Saving Opportunities
 			</h1>
 
 			<div className="flex flex-col gap-4">
 				{suggestions.map((suggestion) => (
-					<div
+					<Card
 						key={suggestion.id}
-						className="bg-white/5 border border-white/10 backdrop-blur-md shadow-md transition-all duration-200 gap-4 pt-3 pb-4 px-6 rounded-xl"
+						className="transition-all duration-200 gap-4 pt-3 pb-4 px-5 rounded-xl"
 					>
 						<div className="flex items-start justify-between">
 							<div className="flex-1">
 								<div className="flex items-start space-x-3">
 									<div className="flex-1">
-										<h3 className="font-semibold text-white mb-1 flex items-center justify-between">
+										<h3 className="font-semibold text-gray-900 mb-1 flex items-center justify-between">
 											{suggestion.title}
-											<ChevronRight className="w-5 h-5 text-gray-400" />
+											<ChevronRight className="w-5 h-5 text-gray-500" />
 										</h3>
-										<p className="text-sm text-slate-300 mb-2">
+										<p className="text-sm text-gray-700 mb-2">
 											{suggestion.description}
 										</p>
 										<div className="flex items-center justify-between">
@@ -98,7 +99,7 @@ const Base = () => {
 								</div>
 							</div>
 						</div>
-					</div>
+					</Card>
 				))}
 			</div>
 		</div>

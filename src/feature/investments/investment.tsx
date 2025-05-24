@@ -61,8 +61,8 @@ const InvestmentPage = () => {
 
             <Card className={cardStyle}>
                 <CardHeader className="flex flex-row items-center pl-4 pr-3">
-                    <CardTitle className="font-medium text-gray-300">Our Recommended Funds</CardTitle>
-                    <ChevronRight className="w-5 h-5 text-gray-400" />
+                    <CardTitle className="font-medium text-gray-700">Our Recommended Funds</CardTitle>
+                    <ChevronRight className="w-5 h-5 text-gray-700" />
                 </CardHeader>
                 <CardContent className='px-4'>
                     <div className="grid grid-cols-4 gap-x-2">
@@ -116,8 +116,8 @@ const InvestmentPage = () => {
 
             <Card className={cardStyle}>
                 <CardHeader className="flex flex-row items-center pl-4 pr-3">
-                    <CardTitle className="font-medium text-gray-300">Today's top movers</CardTitle>
-                    <ChevronRight className="w-5 h-5 text-gray-400" />
+                    <CardTitle className="font-medium text-gray-700">Today's top movers</CardTitle>
+                    <ChevronRight className="w-5 h-5 text-gray-700" />
                 </CardHeader>
                 <CardContent className='px-4'>
                     <Tabs defaultValue="gainers" className="w-full">
@@ -147,8 +147,8 @@ const InvestmentPage = () => {
 
             <Card className={cardStyle}>
                 <CardHeader className="flex flex-row items-center pb-2 pl-4 pr-3">
-                    <CardTitle className="font-medium text-gray-300">Most traded this week</CardTitle>
-                    <ChevronRight className="w-5 h-5 text-gray-400" />
+                    <CardTitle className="font-medium text-gray-700">Most traded this week</CardTitle>
+                    <ChevronRight className="w-5 h-5 text-gray-700" />
                 </CardHeader>
                 <CardContent className="space-y-1 -mt-2 px-4">
                     {mostTraded.map((stock) => (
@@ -182,8 +182,8 @@ const InvestmentPage = () => {
 
             <Card className={cardStyle}>
                 <CardHeader className="flex flex-row items-center pl-4 pr-3">
-                    <CardTitle className="font-medium text-gray-300">Popular first time buys</CardTitle>
-                    <ChevronRight className="w-5 h-5 text-gray-400" />
+                    <CardTitle className="font-medium text-gray-700">Popular first time buys</CardTitle>
+                    <ChevronRight className="w-5 h-5 text-gray-700" />
                 </CardHeader>
                 <CardContent className="-mt-2 px-4">
                     <Tabs defaultValue="stocks" className="w-full">

@@ -57,8 +57,8 @@ const BudgetWidget = () => {
 	}, []);
 
 	return (
-		<Card className="bg-white/5 border border-white/10 backdrop-blur-md shadow-md transition-all duration-200 gap-4 pt-8 pb-4 px-6">
-			<div className="text-slate-400 text-sm mb-2 absolute left-7 top-4">
+		<Card className="transition-all duration-200 gap-4 pt-8 pb-4 px-6 relative">
+			<div className="text-gray-900 text-sm mb-2 absolute left-7 top-4 font-medium">
 				Split
 			</div>
 			{insight?.chartData?.length && insight?.chartData?.length > 0 && (
@@ -97,7 +97,7 @@ const BudgetWidget = () => {
 						{insight.chartData.slice(0, 5).map((entry, index) => (
 							<div
 								key={entry.label}
-								className="flex items-center gap-2 text-sm text-slate-300"
+								className="flex items-center gap-2 text-sm text-gray-600"
 							>
 								<div
 									className="w-3 h-3 rounded-sm"

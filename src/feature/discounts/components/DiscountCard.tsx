@@ -1,3 +1,4 @@
+import { Card } from "@/components/ui/card";
 import { Check, Share } from "lucide-react";
 
 interface DiscountCardProps {
@@ -22,14 +23,14 @@ const DiscountCard = ({
 	// backgroundColor, // Commenting out as it's not directly used for the main background now
 }: DiscountCardProps) => {
 	return (
-		<div className="bg-black/20 backdrop-blur-lg border border-white/10 rounded-2xl p-4 space-y-3 flex flex-col">
+		<Card className="space-y-3 flex flex-col">
 			<div className="flex justify-between items-start mb-2">
-				<span className="text-xl font-bold text-white">{discount}</span>
+				<span className="text-xl font-bold text-gray-900">{discount}</span>
 				<button
 					type="button"
-					className="size-8 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
+					className="size-8 backdrop-blur-md bg-gray-100 rounded-full flex items-center justify-center hover:bg-white/30 transition-colors"
 				>
-					<Share className="size-4 text-white" />
+					<Share className="size-4 text-gray-700" />
 				</button>
 			</div>
 
@@ -39,18 +40,18 @@ const DiscountCard = ({
 					alt={`${brand} logo`}
 					className="size-7 rounded-full mr-2 object-contain"
 				/>
-				<h3 className="font-semibold text-white text-[17px]">{title}</h3>
+				<h3 className="font-semibold text-gray-800 text-[17px]">{title}</h3>
 			</div>
-			<p className="text-white/80 text-[0.8rem]">{description}</p>
+			<p className="text-gray-700 text-[0.8rem]">{description}</p>
 
 			<button
 				type="button"
-				className="mb-1 mt-2 w-full bg-white/90 hover:bg-gray-100 text-gray-900 font-semibold py-2 px-3 rounded-full transition-colors flex items-center justify-center space-x-2"
+				className="mb-1 mt-2 w-full bg-primary font-semibold py-2 px-3 rounded-full transition-colors flex items-center justify-center space-x-2"
 			>
 				<Check className="w-4 h-4" />
 				<span className="text-sm">Activate</span>
 			</button>
-		</div>
+		</Card>
 	);
 };
 

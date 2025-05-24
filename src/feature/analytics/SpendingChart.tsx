@@ -19,11 +19,11 @@ const SpendingChart = ({ data, title }: SpendingChartProps) => {
 	const total = cumulativeData[cumulativeData.length - 1]?.amount || 0;
 
 	return (
-		<Card className="bg-white/5 border border-white/10 backdrop-blur-md shadow-md transition-all duration-200 gap-4 pt-3 pb-4 px-6">
+		<Card className="transition-all duration-200 gap-4 pt-3 pb-4 px-6">
 			<div>
-				<div className="text-slate-400 text-sm mb-2">{title ?? 'Spent'}</div>
+				<div className="text-gray-700 text-sm mb-2 font-medium">{title ?? 'Spent'}</div>
 				<div className="flex items-baseline gap-3">
-					<span className="text-2xl font-bold text-white">
+					<span className="text-2xl font-bold text-gray-900">
 						{total.toLocaleString("de-DE", {
 							style: "currency",
 							currency: "EUR",
@@ -37,15 +37,15 @@ const SpendingChart = ({ data, title }: SpendingChartProps) => {
 					<AreaChart data={cumulativeData}>
 						<defs>
 							<linearGradient id="spendingGradient" x1="0" y1="0" x2="0" y2="1">
-								<stop offset="0%" stopColor="#ef4444" stopOpacity={0.8} />
-								<stop offset="100%" stopColor="#ef4444" stopOpacity={0.1} />
+								<stop offset="0%" stopColor="#44ef44" stopOpacity={0.8} />
+								<stop offset="100%" stopColor="#44ef44" stopOpacity={0.1} />
 							</linearGradient>
 						</defs>
 						<XAxis
 							dataKey="day"
 							axisLine={false}
 							tickLine={false}
-							tick={{ fill: "#64748b", fontSize: 12 }}
+							tick={{ fill: "#74648b", fontSize: 12 }}
 						/>
 						<Tooltip
 							formatter={(value: number) =>
@@ -56,7 +56,7 @@ const SpendingChart = ({ data, title }: SpendingChartProps) => {
 							}
 							labelFormatter={(label: number) => `Day ${label}`}
 							contentStyle={{
-								backgroundColor: "#1e293b",
+								backgroundColor: "#291e3b",
 								border: "none",
 								borderRadius: "0.5rem",
 							}}
@@ -66,7 +66,7 @@ const SpendingChart = ({ data, title }: SpendingChartProps) => {
 						<Area
 							type="monotone"
 							dataKey="amount"
-							stroke="#ef4444"
+							stroke="#44ef44"
 							strokeWidth={2}
 							fill="url(#spendingGradient)"
 						/>
